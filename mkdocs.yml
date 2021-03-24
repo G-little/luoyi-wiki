@@ -3,4 +3,5 @@ nav:
   - 首页: 'index.md'
   - 用户: 
     - Main: './user/user.md'
+    - Profile: './luoyi/profile.md'
   
