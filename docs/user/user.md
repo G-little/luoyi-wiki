@@ -83,23 +83,32 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
     "c": 0,
     "m": null,
     "d": {
-        "uid": 11443, //用户ID
-        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMTE0NDMiLCJBMTUyMDEwMDg5NjEiXSwiZXhwIjoxNTk5MDk4ODIzfQ.ng6CyFi4MTu-HtDRzffWpetApPrzM5z-JKv3a0t8v0g", //登录token
-        "accessExpiresIn": 1599098823065, //失效时间
-        "refreshToken": "fMYerhGCyudmIhLUW", //刷新token
-        "refreshExpiresIn": 1604369223065, //刷新token 失效时间
-        "user": { //用户信息
-            "uid": 11443,  //用户ID
-            "avatar": "/c/d/e", //用户头像
-            "name": "赵六", //用户昵称
-            "gender": 1, // 性别  1 男
-            "birthday": 153000000, //生日
-            "status": 0, //状态
+        "uid": 10002,
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMTAwMDIiLCJBMTUyMDEwMDg5NjEiXSwiZXhwIjoxNjIyMDE4NjEyfQ.rsnE-c-JoqcQEPtOLmLzeaHj4W59wAsFDs-hSi5Lxm4",
+        "accessExpiresIn": 1622018612028,
+        "refreshToken": "TYmGcphEhmtqdky",
+        "refreshExpiresIn": 1627289012028,
+        "user": {
+            "uid": 10002,
+            "avatar": null, //头像
+            "name": null, //昵称
+            "gender": null, //性别 1:男 -1:女 0:保密 
+            "birthday": null, //生日
+            "status": 0, //
             "mobile": "15201008961", //手机号
-            "createTime": 1590149492786, //创建时间
-            "updateTime": 1590149538735 //更新时间
-        },  //im token
-        "imToken": "eJyrVgrxCdZLrSjILEpVsjI0sjQzMDDQAQuWpRYpWSkZ6RkoQfjFKdmJBQWZKUBlJgYGxpamFpYWEJnMlNS8ksy0TLAGQ0MTE2OYlsx0oIi5Z7a3ZW5ZZWJBZFaZe65pSHClYaKjX2mpmUdOYkSVqU+QRURmUmWEc2SyLVRjSWYuyDmmlibGJpZGpka1AOQJMOU="
+            "createTime": 1616406091691, //创建时间
+            "updateTime": null,
+            "userRole": null, 
+            "certStatus": null,
+            "workplace": null, //工作场所
+            "studySubject": null, //研究学科
+            "subjectField": null, //细分领域
+            "jobTitle": null, //工作头衔
+            "realName": null, //真实姓名
+            "admin": false
+        },
+        "imToken": "eJyrVgrxCdZLrSjILEpVsjI0sjQzMDDQAQuWpRYpWSkZ6RkoQfjFKdmJBQWZKUBlJgYGxpamFpYWEJnMlNS8ksy0TLAGQ6ABRjAtmelAkXTjcO0C-6KosAjnjFC3QHNfV9e8glBH7fCinLSwkvLkjJRUPzc37xyDwHJbqMaSzFyQc8wMzcxNLIwMjWoBxEQwYw__",
+        "new": false
     }
 }
 ```
@@ -211,16 +220,24 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
         "accessExpiresIn": 1599098823065, //失效时间
         "refreshToken": "fMYerhGCyudmIhLUW", //刷新token
         "refreshExpiresIn": 1604369223065, //刷新token 失效时间
-        "user": { //用户信息
-            "uid": 11443,  //用户ID
-            "avatar": "/c/d/e", //用户头像
-            "name": "赵六", //用户昵称
-            "gender": 1, // 性别  1 男
-            "birthday": 153000000, //生日
-            "status": 0, //状态
+        "user": {
+            "uid": 10002,
+            "avatar": null, //头像
+            "name": null, //昵称
+            "gender": null, //性别 1:男 -1:女 0:保密 
+            "birthday": null, //生日
+            "status": 0, //
             "mobile": "15201008961", //手机号
-            "createTime": 1590149492786, //创建时间
-            "updateTime": 1590149538735 //更新时间
+            "createTime": 1616406091691, //创建时间
+            "updateTime": null,
+            "userRole": null, 
+            "certStatus": null,
+            "workplace": null, //工作场所
+            "studySubject": null, //研究学科
+            "subjectField": null, //细分领域
+            "jobTitle": null, //工作头衔
+            "realName": null, //真实姓名
+            "admin": false
         }
     }
 }
@@ -257,17 +274,24 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
     "c": 0,
     "m": null,
     "d": {
-        "uid": 11443, //用户id
-        "avatar": "/c/d/e", //用户头像
-        "name": "赵六", //用户名
-        "gender": 1, //性别
-        "birthday": 153000000, //生日
-        "status": 0,
-        "mobile": "15201008961",//手机号
-        "createTime": 1590149492786, //创建时间
-        "updateTime": 1590149538735 //更新时间
-    }
-}
+            "uid": 10002,
+            "avatar": null, //头像
+            "name": null, //昵称
+            "gender": null, //性别 1:男 -1:女 0:保密 
+            "birthday": null, //生日
+            "status": 0, //
+            "mobile": "15201008961", //手机号
+            "createTime": 1616406091691, //创建时间
+            "updateTime": null,
+            "userRole": null, 
+            "certStatus": null,
+            "workplace": null, //工作场所
+            "studySubject": null, //研究学科
+            "subjectField": null, //细分领域
+            "jobTitle": null, //工作头衔
+            "realName": null, //真实姓名
+            "admin": false
+        }}
 
 ```
 
@@ -327,6 +351,11 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 | birthday      | 否| int  | 生日 |   |
 | gender   | 否 | int  | 性别 |   1:男  2:女  0:未知 |
 | name   | 否 | string  | 姓名 | 用户名 |
+| workplace   | 否 | string  | 工作 | 工作 |
+| studySubject   | 否 | string  | 研究学科 |  |
+| subjectField   | 否 | string  | 研究领域 |  |
+| jobTitle   | 否 | string  | 头衔 |  |
+| realName   | 否 | string  | 真实姓名 |  |
 
 
 #####  错误说明
