@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Profile - 络绎直播</title>
+        <title>Main - 络绎直播</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -49,7 +49,7 @@
                             <li >
                                 <a href="../..">首页</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -57,17 +57,17 @@
     <a href="../../user/user/">Main</a>
 </li>
                                     
-<li class="active">
-    <a href="./">Profile</a>
+<li >
+    <a href="../profile/">Profile</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">直播 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../meeting/">Main</a>
+<li class="active">
+    <a href="./">Main</a>
 </li>
                                 </ul>
                             </li>
@@ -89,12 +89,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../../user/user/">
+                                <a rel="next" href="../profile/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../meeting/">
+                                <a rel="prev" href="../../user/user/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -106,7 +106,7 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#_1">配置信息相关接口</a></li>
+        <li class="main active"><a href="#_1">会议相关接口</a></li>
             <li><a href="#_2">修订记录</a></li>
             <li><a href="#_3">背景</a></li>
             <li><a href="#_4">产品说明</a></li>
@@ -116,16 +116,16 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="_1">配置信息相关接口</h1>
+<h1 id="_1">会议相关接口</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">配置信息相关接口</a><ul>
+<li><a href="#_1">会议相关接口</a><ul>
 <li><a href="#_2">修订记录</a></li>
 <li><a href="#_3">背景</a></li>
 <li><a href="#_4">产品说明</a></li>
 <li><a href="#_5">关键流程说明</a></li>
 <li><a href="#_6">接口说明</a><ul>
-<li><a href="#10">1.0 学校列表</a><ul>
+<li><a href="#10">1.0 创建会议</a><ul>
 <li><a href="#_7">接口说明</a></li>
 <li><a href="#_8">请求说明</a></li>
 <li><a href="#_9">输入参数</a></li>
@@ -133,20 +133,12 @@
 <li><a href="#_11">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#11">1.1 企业列表</a><ul>
+<li><a href="#11">1.1 首页会议列表</a><ul>
 <li><a href="#_12">接口说明</a></li>
 <li><a href="#_13">请求说明</a></li>
 <li><a href="#_14">输入参数</a></li>
 <li><a href="#_15">错误说明</a></li>
 <li><a href="#_16">返回实例</a></li>
-</ul>
-</li>
-<li><a href="#12">1.2 学科/细分领域 列表</a><ul>
-<li><a href="#_17">接口说明</a></li>
-<li><a href="#_18">请求说明</a></li>
-<li><a href="#_19">输入参数</a></li>
-<li><a href="#_20">错误说明</a></li>
-<li><a href="#_21">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -181,25 +173,25 @@
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
 <h2 id="_3">背景</h2>
-<p>用户配置信息相关接口</p>
+<p>直播会议相关接口</p>
 <h2 id="_4">产品说明</h2>
 <h2 id="_5">关键流程说明</h2>
 <h2 id="_6">接口说明</h2>
-<h4 id="10">1.0 学校列表</h4>
+<h4 id="10">1.0 创建会议</h4>
 <h5 id="_7">接口说明</h5>
-<p>根据关键字查询学校列表</p>
+<p>创建会议</p>
 <h5 id="_8">请求说明</h5>
 <table>
 <thead>
 <tr>
 <th align="left">http 请求方式</th>
-<th align="center">get</th>
+<th align="center">post</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/profile/school/list</td>
+<td align="center">/meeting/create</td>
 </tr>
 </tbody>
 </table>
@@ -216,25 +208,53 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">keyword</td>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">会议类型</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">privacyLevel</td>
 <td align="center">否</td>
 <td align="left">string</td>
-<td align="left">关键字</td>
+<td align="left">私密等级</td>
+<td align="left">private/public</td>
+</tr>
+<tr>
+<td align="left">content</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">会议主题</td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left">page</td>
+<td align="left">verifyCode</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">验证码</td>
+<td align="left">私密空间必填</td>
+</tr>
+<tr>
+<td align="left">mayStartTime</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">预约开始时间</td>
+<td align="left">格式  yyyy-MM-dd HH:mm</td>
+</tr>
+<tr>
+<td align="left">userLimit</td>
 <td align="center">否</td>
 <td align="left">int</td>
-<td align="left">分页</td>
+<td align="left">最多直播人数/默认30 </td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">单页条数</td>
-<td align="left">默认10</td>
+<td align="left">spearkerArray</td>
+<td align="center">是</td>
+<td align="left">int[]</td>
+<td align="left">主讲人 数组 ，用户自己放第一个</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -244,27 +264,14 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;total&quot;: 5,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 13373,
-                &quot;name&quot;: &quot;台湾清华大学&quot;
-            }
-        ],
-        &quot;end&quot;: true,
-        &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0,
-        &quot;totalPage&quot;: 1
+        &quot;id&quot;: 1
     }
 }
 
 </code></pre>
 
-<h4 id="11">1.1 企业列表</h4>
+<h4 id="11">1.1 首页会议列表</h4>
 <h5 id="_12">接口说明</h5>
-<p>根据关键字查询企业列表</p>
 <h5 id="_13">请求说明</h5>
 <table>
 <thead>
@@ -276,7 +283,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/profile/company/list</td>
+<td align="center">/meeting/list</td>
 </tr>
 </tbody>
 </table>
@@ -293,137 +300,74 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">keyword</td>
+<td align="left">status</td>
 <td align="center">否</td>
-<td align="left">string</td>
-<td align="left">关键字</td>
-<td align="left"></td>
+<td align="left">int</td>
+<td align="left">直播状态</td>
+<td align="left">0 预约 1 直播中 -1 结束 ，默认:直播中</td>
 </tr>
 <tr>
 <td align="left">page</td>
 <td align="center">否</td>
 <td align="left">int</td>
 <td align="left">分页</td>
-<td align="left"></td>
+<td align="left">默认: 1</td>
 </tr>
 <tr>
 <td align="left">limit</td>
 <td align="center">否</td>
 <td align="left">int</td>
-<td align="left">单页条数</td>
-<td align="left">默认10</td>
+<td align="left">条数限制</td>
+<td align="left">默认: 10</td>
 </tr>
 </tbody>
 </table>
 <h5 id="_15">错误说明</h5>
 <h5 id="_16">返回实例</h5>
-<pre><code class="json">{
+<pre><code class="json">
+{
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
         &quot;pageSize&quot;: 10,
-        &quot;total&quot;: 36,
+        &quot;total&quot;: 1,
         &quot;currentPage&quot;: 1,
         &quot;list&quot;: [
             {
-                &quot;id&quot;: 482560,
-                &quot;comId&quot;: null,
-                &quot;name&quot;: &quot;成都清华高科信息技术有限公司&quot;,
-                &quot;otherName&quot;: &quot;清华高科&quot;
+                &quot;id&quot;: 1,
+                &quot;type&quot;: 0,
+                &quot;content&quot;: &quot;这是一次测试&quot;,
+                &quot;uid&quot;: 10002,
+                &quot;mayStartTime&quot;: 1616767200000, //预约时间戳 毫秒值
+                &quot;orgId&quot;: null,
+                &quot;userLimit&quot;: 30, //最多用户限制
+                &quot;startTime&quot;: null, //实际开始时间 毫秒值
+                &quot;endTime&quot;: null, //实际结束时间 毫秒值
+                &quot;subscribeCount&quot;: 0, //预约人数
+                &quot;playUrl&quot;: null, //回放地址
+                &quot;timeLen&quot;: null,  //时长
+                &quot;tags&quot;: null, //标签 
+                &quot;userBrief&quot;: [  //用户简介
+                    {
+                        &quot;uid&quot;: 10002, //用户ID
+                        &quot;avatar&quot;: null, //头像
+                        &quot;name&quot;: null, //昵称
+                        &quot;jobTitle&quot;: null, //工作头衔
+                        &quot;meetingRole&quot;: 1 //用户角色  1 主播  2 嘉宾  0 普通用户
+                    }
+                ],
+                &quot;status&quot;: 0,  //查询的status 类型 0 预约  1 直播中  -1 结束
+                &quot;privacyLevel&quot;: &quot;public&quot;
             }
         ],
-        &quot;end&quot;: false,
+        &quot;end&quot;: true,
+        &quot;status&quot;: 0,
         &quot;empty&quot;: false,
         &quot;startIndex&quot;: 0,
-        &quot;totalPage&quot;: 4
+        &quot;totalPage&quot;: 1
     }
 }
-</code></pre>
 
-<h4 id="12">1.2 学科/细分领域 列表</h4>
-<h5 id="_17">接口说明</h5>
-<p>根据关键字查询企业列表</p>
-<h5 id="_18">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/profile/subject/list</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_19">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">level</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">等级</td>
-<td align="left">1 学科  2 细分领域</td>
-</tr>
-<tr>
-<td align="left">keyword</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">关键字</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">page</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">分页</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">单页条数</td>
-<td align="left">默认10</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_20">错误说明</h5>
-<h5 id="_21">返回实例</h5>
-<pre><code class="json">{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;total&quot;: 188,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 197,
-                &quot;nameCn&quot;: &quot;物理&quot;,
-                &quot;nameEn&quot;: &quot;Physics&quot;,
-                &quot;level&quot;: 2,
-                &quot;parentId&quot;: &quot;31&quot;
-            }
-        ],
-        &quot;end&quot;: false,
-        &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0,
-        &quot;totalPage&quot;: 19
-    }
-}
 </code></pre></div>
         </div>
 
