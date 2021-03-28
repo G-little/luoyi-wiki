@@ -7,5 +7,5 @@ nav:
   - 直播: 
     - Main: './luoyi/meeting.md'
   - 论文: 
-    - Main: './user/user.md'
+    - Main: './luoyi/article.md'
   
