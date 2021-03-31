@@ -354,6 +354,8 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 | workplace   | 否 | string  | 工作 | 工作 |
 | studySubject   | 否 | string  | 研究学科 |  |
 | subjectField   | 否 | string  | 研究领域 |  |
+| subjectId   | 否 | int  | 专业方向ID |  |
+| fieldId   | 否 | int  | 细分领域ID |  |
 | jobTitle   | 否 | string  | 头衔 |  |
 | realName   | 否 | string  | 真实姓名 |  |
 
