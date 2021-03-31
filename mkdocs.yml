@@ -4,6 +4,7 @@ nav:
   - 用户: 
     - Main: './user/user.md'
     - Profile: './luoyi/profile.md'
+    - 主页: './luoyi/user.md'
   - 直播: 
     - Main: './luoyi/meeting.md'
   - 论文: 
