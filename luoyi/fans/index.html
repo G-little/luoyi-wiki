@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Main - 络绎直播</title>
+        <title>关注/好友 - 络绎直播</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -36,7 +36,7 @@
                             <li class="navitem">
                                 <a href="../.." class="nav-link">首页</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -53,16 +53,16 @@
 </li>
                                     
 <li>
-    <a href="../fans/" class="dropdown-item">关注/好友</a>
+    <a href="./" class="dropdown-item active">关注/好友</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">直播 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Main</a>
+    <a href="../meeting/" class="dropdown-item">Main</a>
 </li>
                                 </ul>
                             </li>
@@ -84,12 +84,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../fans/" class="nav-link">
+                                <a rel="prev" href="../user/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../article/" class="nav-link">
+                                <a rel="next" href="../meeting/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -111,7 +111,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">论文相关接口</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">关注相关接口</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
               <ul class="nav flex-column">
@@ -140,16 +140,16 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">论文相关接口</h1>
+<h1 id="_1">关注相关接口</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">论文相关接口</a><ul>
+<li><a href="#_1">关注相关接口</a><ul>
 <li><a href="#_2">修订记录</a></li>
 <li><a href="#_3">背景</a></li>
 <li><a href="#_4">产品说明</a></li>
 <li><a href="#_5">关键流程说明</a></li>
 <li><a href="#_6">接口说明</a><ul>
-<li><a href="#10">1.0 论文列表</a><ul>
+<li><a href="#11">1.1 关注</a><ul>
 <li><a href="#_7">接口说明</a></li>
 <li><a href="#_8">请求说明</a></li>
 <li><a href="#_9">输入参数</a></li>
@@ -157,12 +157,20 @@
 <li><a href="#_11">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#11">1.1 论文详情</a><ul>
+<li><a href="#12">1.2 取消关注</a><ul>
 <li><a href="#_12">接口说明</a></li>
 <li><a href="#_13">请求说明</a></li>
 <li><a href="#_14">输入参数</a></li>
 <li><a href="#_15">错误说明</a></li>
 <li><a href="#_16">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#13">1.3 取消关注</a><ul>
+<li><a href="#_17">接口说明</a></li>
+<li><a href="#_18">请求说明</a></li>
+<li><a href="#_19">输入参数</a></li>
+<li><a href="#_20">错误说明</a></li>
+<li><a href="#_21">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -197,11 +205,11 @@
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
 <h2 id="_3">背景</h2>
-<p>论文相关接口</p>
+<p>关注相关接口</p>
 <h2 id="_4">产品说明</h2>
 <h2 id="_5">关键流程说明</h2>
 <h2 id="_6">接口说明</h2>
-<h4 id="10">1.0 论文列表</h4>
+<h4 id="11">1.1 关注</h4>
 <h5 id="_7">接口说明</h5>
 <p>创建会议</p>
 <h5 id="_8">请求说明</h5>
@@ -209,13 +217,13 @@
 <thead>
 <tr>
 <th align="left">http 请求方式</th>
-<th align="center">get</th>
+<th align="center">put</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/article/list</td>
+<td align="center">/fans/follow</td>
 </tr>
 </tbody>
 </table>
@@ -232,79 +240,28 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">parentSubjectType</td>
-<td align="center">否</td>
+<td align="left">uid</td>
+<td align="center">是</td>
 <td align="left">int</td>
-<td align="left">论文类型</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">subjectTypes</td>
-<td align="center">否</td>
-<td align="left">int[]</td>
-<td align="left">论文子类型</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">keyword</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">关键字</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">page</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">页码</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">单页条数</td>
+<td align="left">用户ID</td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 <h5 id="_10">错误说明</h5>
 <h5 id="_11">返回实例</h5>
-<pre><code class="json">{
+<pre><code class="json">
+{
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;total&quot;: null,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 1,
-                &quot;title&quot;: &quot;Leaf form diversification in an heirloom tomato results from alterations in two different HOMEOBOX genes&quot;,
-                &quot;authors&quot;: [
-                    &quot;Hokuto Nakayama&quot;,
-                    &quot;Steven D. Rowland&quot;,
-                    &quot;Zizhang Cheng&quot;,
-                    &quot;Kristina Zumstein&quot;,
-                    &quot;Julie Kang&quot;,
-                    &quot;Yohei Kondo&quot;,
-                    &quot;Neelima R. Sinha&quot;
-                ],
-                &quot;visitorBrief&quot;: null,
-                &quot;visitorCount&quot;: 0,
-                &quot;curiousCount&quot;: 0
-            }
-        ],
-        &quot;end&quot;: false,
-        &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0,
-        &quot;totalPage&quot;: null
+        &quot;followStatus&quot;:0  //关注状态   0:未关注  1：关注  2:双向关注
     }
 }
 
 </code></pre>
 
-<h4 id="11">1.1 论文详情</h4>
+<h4 id="12">1.2 取消关注</h4>
 <h5 id="_12">接口说明</h5>
 <p>创建会议</p>
 <h5 id="_13">请求说明</h5>
@@ -312,13 +269,13 @@
 <thead>
 <tr>
 <th align="left">http 请求方式</th>
-<th align="center">get</th>
+<th align="center">put</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/article/detail</td>
+<td align="center">/fans/follow</td>
 </tr>
 </tbody>
 </table>
@@ -335,35 +292,74 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">id</td>
+<td align="left">uid</td>
 <td align="center">是</td>
 <td align="left">int</td>
-<td align="left">论文ID</td>
+<td align="left">用户ID</td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 <h5 id="_15">错误说明</h5>
 <h5 id="_16">返回实例</h5>
-<pre><code class="json">{
+<pre><code class="json">
+{
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;id&quot;: 1,
-        &quot;title&quot;: &quot;Leaf form diversification in an heirloom tomato results from alterations in two different HOMEOBOX genes&quot;,
-        &quot;authors&quot;: [ //作者
-            &quot;Hokuto Nakayama&quot;,
-            &quot;Steven D. Rowland&quot;,
-            &quot;Zizhang Cheng&quot;,
-            &quot;Kristina Zumstein&quot;,
-            &quot;Julie Kang&quot;,
-            &quot;Yohei Kondo&quot;,
-            &quot;Neelima R. Sinha&quot;
-        ],
-        &quot;visitorBrief&quot;: null,
-        &quot;visitorCount&quot;: 0,
-        &quot;curiousCount&quot;: 0,
-        &quot;brief&quot;: &quot;Domesticated plants and animals display tremendous diversity in various phenotypic traits and often this diversity is seen within the same species. Tomato (Solanum lycopersicum; Solanaceae) cultivars show wide variation in leaf morphology, but the influence of breeding efforts in sculpting this diversity is not known. Here, we demonstrate that a single nucleotide deletion in the homeobox motif of BIPINNATA, which is a BEL-LIKE HOMEODOMAIN gene, led to a highly complex leaf phenotype in an heirloom tomato, Silvery Fir Tree (SiFT). Additionally, a comparative gene network analysis revealed that reduced expression of the ortholog of WUSCHEL RELATED HOMEOBOX 1 is also important for the narrow leaflet phenotype seen in SiFT. Phylogenetic and comparative genome analysis using whole-genome sequencing data suggests that the bip mutation in SiFT is likely a de novo mutation, instead of standing genetic variation. These results provide new insights into natural variation in phenotypic traits introduced into crops during improvement processes after domestication.&quot;
+        &quot;followStatus&quot;:0  //关注状态   0:未关注  1：关注  2:双向关注
+    }
+}
+
+</code></pre>
+
+<h4 id="13">1.3 取消关注</h4>
+<h5 id="_17">接口说明</h5>
+<p>取消关注</p>
+<h5 id="_18">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">put</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/fans/unfollow</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_19">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">uid</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_20">错误说明</h5>
+<h5 id="_21">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
