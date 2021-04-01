@@ -55,6 +55,84 @@
 
 
 
+#### 1.2 论文列表
+
+##### 接口说明
+
+创建会议
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/article/list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| parentSubjectType      | 否 |  int  |  学科领域 |    |
+| subjectTypes      | 否 |  int[]  |  细分领域数组 |    |
+| page      | 否 |  int  |  分页 |    |
+| limit      | 否 |  int  |  限制条数 |    |
+
+#####  错误说明
+
+
+
+
+
+#####  返回实例
+```json
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 1,
+                "title": "Leaf form diversification in an heirloom tomato results from alterations in two different HOMEOBOX genes",
+                "authors": [
+                    "Hokuto Nakayama",
+                    "Steven D. Rowland",
+                    "Zizhang Cheng",
+                    "Kristina Zumstein",
+                    "Julie Kang",
+                    "Yohei Kondo",
+                    "Neelima R. Sinha"
+                ],
+                "visitorBrief": [
+                    {
+                        "nickname": null,
+                        "avatar": null,
+                        "uid": 10002,
+                        "jobTitle": null
+                    }
+                ],
+                "visitorCount": 1,
+                "curiousCount": 0,
+                "curious": true
+            }
+        ],
+        "end": false,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+```
+
+
+
+
+
+
+
+
 
 
 
