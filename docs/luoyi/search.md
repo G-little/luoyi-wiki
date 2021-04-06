@@ -197,7 +197,14 @@
             "pageSize": 2,
             "total": 0,
             "currentPage": 1,
-            "list": null,
+            "list": [
+                {
+                    "id": 1,
+                    "type": 1,
+                    "value": "测试一下",
+                    "addTime": null
+                }
+            ],
             "end": true,
             "empty": true,
             "startIndex": 0,
