@@ -7,6 +7,7 @@ nav:
     - 个人主页: './luoyi/user.md'
     - 关注/好友: './luoyi/fans.md'
     - 话题: './luoyi/topic.md'
+    - 搜索: './luoyi/search.md'
   - 直播: 
     - Main: './luoyi/meeting.md'
   - 论文: 
