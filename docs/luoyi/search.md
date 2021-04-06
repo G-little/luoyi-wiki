@@ -112,7 +112,9 @@
                     "name": "陈破空",
                     "workplace": "德国IFW研究所",
                     "jobTitle": null,
-                    "followStatus": 0
+                    "followStatus": 0,
+                    "fansCount":100,
+                    "followCount":100,
                 }
             ],
             "end": false,
