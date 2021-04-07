@@ -1,15 +1,18 @@
 site_name: 络绎直播
 nav:
-  - 首页: 'index.md'
+  - 首页: 
+    - Main: 'index.md'
+    - 话题: './luoyi/topic.md'
+    - 搜索: './luoyi/search.md'
   - 用户: 
     - Main: './user/user.md'
     - Profile: './luoyi/profile.md'
     - 个人主页: './luoyi/user.md'
     - 关注/好友: './luoyi/fans.md'
-    - 话题: './luoyi/topic.md'
-    - 搜索: './luoyi/search.md'
   - 直播: 
     - Main: './luoyi/meeting.md'
   - 论文: 
     - Main: './luoyi/article.md'
+  - 通知: 
+    - Main: './luoyi/im.md'
   
