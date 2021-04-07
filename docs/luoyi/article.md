@@ -237,6 +237,23 @@
     "c": 0,
     "m": null,
     "d": {
+        "pageSize": 20,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+            {
+                "uid": 10005,
+                "avatar": null,
+                "name": null,
+                "workplace": null,
+                "jobTitle": null,
+                "followStatus": 0
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "totalPage": null,
+        "startIndex": 0
     }
 }
 
