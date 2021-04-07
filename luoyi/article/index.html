@@ -137,6 +137,7 @@
             
             
             
+            
         </ul>
     </div>
 </div></div>
@@ -409,6 +410,77 @@
 </table>
 <h5 id="_19">错误说明</h5>
 <h5 id="_20">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+    }
+}
+
+</code></pre>
+
+<h4 id="15">1.5  用户列表</h4>
+<h5 id="_21">接口说明</h5>
+<p>创建会议</p>
+<h5 id="_22">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/article/user_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_23">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">文章ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">类型</td>
+<td align="left">0 浏览用户  1 好奇用户</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left">默认值1</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">每页条数</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_24">错误说明</h5>
+<h5 id="_25">返回实例</h5>
 <pre><code class="json">{
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
