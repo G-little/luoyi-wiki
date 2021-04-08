@@ -182,6 +182,11 @@
 <li><a href="#_8">协议说明</a></li>
 </ul>
 </li>
+<li><a href="#1002">1002)  与我相关协议</a><ul>
+<li><a href="#_9">接口说明</a></li>
+<li><a href="#_10">协议说明</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -302,6 +307,46 @@
                      &quot;name&quot;:&quot;名称&quot; , //名称
                      &quot;eventTime&quot;:123456789 , //直播时间
                      &quot;eventType&quot;:1 , //事件类型 1 发起会议预约  2 发起会议直播 3 预约开始通知  4 好奇通知
+                     &quot;content&quot;:&quot;名称&quot; , //直播名称
+                     &quot;targetId&quot;:1, //对象ID 用于跳转
+                  }
+        }
+
+
+</code></pre>
+
+<h3 id="1002">1002)  与我相关协议</h3>
+<h4 id="_9">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">1002</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_10">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 1002,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{  
+                     &quot;userList&quot;:[
+                         {
+                             &quot;uid&quot;:1,
+                             &quot;avatar&quot;:&quot;/a&quot;,
+                             &quot;name&quot;:&quot;xx&quot;
+                         }
+                     ],
+                     &quot;eventType&quot;:1 , //事件类型 1 参与会议  2 一同参与会议 3 论文好奇  4  一同好奇
                      &quot;content&quot;:&quot;名称&quot; , //直播名称
                      &quot;targetId&quot;:1, //对象ID 用于跳转
                   }
