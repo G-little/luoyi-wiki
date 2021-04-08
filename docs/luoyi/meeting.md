@@ -818,3 +818,81 @@
 
 ```
 
+
+
+#### 2.5 相关视频列表
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/meeting/related_list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id      | 是| int  |  直播id |  直播ID |
+| page      | 否 | int  |  分页 |  默认: 1  |
+| limit      | 否 | int  |  条数限制 |  默认: 10  |
+
+
+#####  错误说明
+
+
+
+
+
+#####  返回实例
+
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "total": 1,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 1,
+                "type": 0,
+                "content": "这是一次测试",
+                "uid": 10002,
+                "mayStartTime": 1616767200000, //预约时间戳 毫秒值
+                "orgId": null,
+                "userLimit": 30, //最多用户限制
+                "startTime": null, //实际开始时间 毫秒值
+                "endTime": null, //实际结束时间 毫秒值
+                "subscribeCount": 0, //预约人数
+                "playUrl": null, //回放地址
+                "timeLen": null,  //时长
+                "tags": null, //标签 
+                "userBrief": [  //用户简介
+                    {
+                        "uid": 10002, //用户ID
+                        "avatar": null, //头像
+                        "name": null, //昵称
+                        "jobTitle": null, //工作头衔
+                        "meetingRole": 1 //用户角色  1 主播  2 嘉宾  0 普通用户
+                    }
+                ],
+                "status": 0,  //查询的status 类型 0 预约  1 直播中  -1 结束
+                "privacyLevel": "public"
+            }
+        ],
+        "end": true,
+        "status": 0,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": 1
+    }
+}
+
+```
+
