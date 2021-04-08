@@ -292,12 +292,20 @@
 <li><a href="#_81">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#23">2.3 进入直播房间</a><ul>
+<li><a href="#23">2.3 发送消息</a><ul>
 <li><a href="#_82">接口说明</a></li>
 <li><a href="#_83">请求说明</a></li>
 <li><a href="#_84">输入参数</a></li>
 <li><a href="#_85">错误说明</a></li>
 <li><a href="#_86">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#24">2.4 查看消息列表</a><ul>
+<li><a href="#_87">接口说明</a></li>
+<li><a href="#_88">请求说明</a></li>
+<li><a href="#_89">输入参数</a></li>
+<li><a href="#_90">错误说明</a></li>
+<li><a href="#_91">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -1163,7 +1171,8 @@
                 &quot;name&quot;: null,
                 &quot;content&quot;: &quot;002&quot;,
                 &quot;meetingTime&quot;: 1617369960000,
-                &quot;meetingStatus&quot;: -1
+                &quot;meetingStatus&quot;: -1, //直播状态
+                &quot;status;&quot; 0  //预约状态
             }
         ],
         &quot;end&quot;: true,
@@ -1286,7 +1295,7 @@
 
 </code></pre>
 
-<h4 id="23">2.3 进入直播房间</h4>
+<h4 id="23">2.3 发送消息</h4>
 <h5 id="_82">接口说明</h5>
 <h5 id="_83">请求说明</h5>
 <table>
@@ -1340,6 +1349,80 @@
     &quot;d&quot;: {
         &quot;id&quot;:1    
     }
+}
+
+</code></pre>
+
+<h4 id="24">2.4 查看消息列表</h4>
+<h5 id="_87">接口说明</h5>
+<h5 id="_88">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/meeting/msg/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_89">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">会议ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页条数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left">默认第一页</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_90">错误说明</h5>
+<h5 id="_91">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: [
+        {
+            &quot;id&quot;:1,
+            &quot;meetingId&quot;:1, 
+            &quot;uid&quot;:1, 
+            &quot;jobTitle&quot;:&quot;xxx&quot;, 
+            &quot;name&quot;:&quot;xxx&quot;, 
+            &quot;msg&quot;:&quot;xxx&quot;,   
+            &quot;addTime&quot;:1233333 
+        }
+    ]
+
 }
 
 </code></pre></div>
