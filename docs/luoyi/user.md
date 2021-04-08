@@ -132,3 +132,61 @@
 
 
 
+#### 1.2 查询用户信息
+
+##### 接口说明
+
+创建会议
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/u/list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| uidArray      | 是| int[]  |  用户ID数组 |    |
+
+
+#####  错误说明
+
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": [
+        {
+            "uid": 10001,
+            "avatar": null,
+            "name": null,
+            "workplace": null,
+            "jobTitle": null,
+            "followStatus": 0,
+            "fansCount": null,
+            "followCount": null
+        },
+        {
+            "uid": 10002,
+            "avatar": null,
+            "name": null,
+            "workplace": null,
+            "jobTitle": null,
+            "followStatus": 0,
+            "fansCount": 0,
+            "followCount": 1
+        }
+    ]
+}
+```
+
+
+
