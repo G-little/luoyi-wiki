@@ -15,4 +15,10 @@ nav:
     - Main: './luoyi/article.md'
   - 通知: 
     - Main: './luoyi/im.md'
+
+  - 管理后台: 
+    - Main: './admin/admin.md'  
+    - 系统管理: './admin/admin_sys.md'  
+    - 用户管理: './admin/admin_user.md'  
+    - 标签管理: './admin/admin_tag.md'  
   
