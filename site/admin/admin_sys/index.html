@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>系统管理 - 络绎直播</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">络绎直播</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">首页 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../..">Main</a>
+</li>
+                                    
+<li >
+    <a href="../../luoyi/topic/">话题</a>
+</li>
+                                    
+<li >
+    <a href="../../luoyi/search/">搜索</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../user/user/">Main</a>
+</li>
+                                    
+<li >
+    <a href="../../luoyi/profile/">Profile</a>
+</li>
+                                    
+<li >
+    <a href="../../luoyi/user/">个人主页</a>
+</li>
+                                    
+<li >
+    <a href="../../luoyi/fans/">关注/好友</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">直播 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../luoyi/meeting/">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">论文 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../luoyi/article/">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">通知 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../luoyi/im/">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../admin/">Main</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">系统管理</a>
+</li>
+                                    
+<li >
+    <a href="../admin_user/">用户管理</a>
+</li>
+                                    
+<li >
+    <a href="../admin_tag/">标签管理</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../admin/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../admin_user/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">管理后台</a></li>
+            <li><a href="#_2">修订记录</a></li>
+            <li><a href="#_3">背景</a></li>
+            <li><a href="#_4">产品说明</a></li>
+            <li><a href="#_5">关键流程说明</a></li>
+            <li><a href="#_6">接口说明</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="_1">管理后台</h1>
+<div class="toc">
+<ul>
+<li><a href="#_1">管理后台</a><ul>
+<li><a href="#_2">修订记录</a></li>
+<li><a href="#_3">背景</a></li>
+<li><a href="#_4">产品说明</a></li>
+<li><a href="#_5">关键流程说明</a></li>
+<li><a href="#_6">接口说明</a><ul>
+<li><a href="#_7">通用接口</a></li>
+<li><a href="#_8">管理权限</a><ul>
+<li><a href="#_9">登录验证码接口</a><ul>
+<li><a href="#_10">请求说明</a></li>
+<li><a href="#_11">输入参数</a></li>
+<li><a href="#_12">返回实例</a></li>
+<li><a href="#_13">错误实例</a></li>
+</ul>
+</li>
+<li><a href="#_14">登陆接口</a><ul>
+<li><a href="#_15">请求说明</a></li>
+<li><a href="#_16">输入参数</a></li>
+<li><a href="#_17">请求实例</a></li>
+<li><a href="#_18">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_19">账号管理（列表）</a><ul>
+<li><a href="#_20">请求说明</a></li>
+<li><a href="#_21">输入参数</a></li>
+<li><a href="#_22">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_23">账号员详情</a><ul>
+<li><a href="#_24">请求说明</a></li>
+<li><a href="#_25">输入参数</a></li>
+<li><a href="#_26">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_27">添加管理员</a><ul>
+<li><a href="#_28">请求说明</a></li>
+<li><a href="#_29">输入参数</a></li>
+<li><a href="#_30">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_31">添加角色</a><ul>
+<li><a href="#_32">请求说明</a></li>
+<li><a href="#_33">输入参数</a></li>
+<li><a href="#_34">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_35">分页拉取角色列表</a><ul>
+<li><a href="#_36">请求说明</a></li>
+<li><a href="#_37">输入参数</a></li>
+<li><a href="#_38">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_39">获取角色详情</a><ul>
+<li><a href="#_40">请求说明</a></li>
+<li><a href="#_41">输入参数</a></li>
+<li><a href="#_42">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_43">删除角色</a><ul>
+<li><a href="#_44">请求说明</a></li>
+<li><a href="#_45">输入参数</a></li>
+<li><a href="#_46">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_47">资源列表</a><ul>
+<li><a href="#_48">请求说明</a></li>
+<li><a href="#_49">输入参数</a></li>
+<li><a href="#_50">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_51">添加资源</a><ul>
+<li><a href="#_52">请求说明</a></li>
+<li><a href="#_53">输入参数</a></li>
+<li><a href="#_54">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_55">获取资源详情</a><ul>
+<li><a href="#_56">请求说明</a></li>
+<li><a href="#_57">输入参数</a></li>
+<li><a href="#_58">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_59">删除资源</a><ul>
+<li><a href="#_60">请求说明</a></li>
+<li><a href="#_61">输入参数</a></li>
+<li><a href="#_62">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="_2">修订记录</h2>
+<hr />
+<p>日期 | 作者 | 修订类型 | 修订内容 | 版本
+---- | ---- | ---- | ---- | ---- |
+2019年10月21日|冷立纲|A|新增设计方案|1.0</p>
+<blockquote>
+<p>【修订类型：A-新增  M-修改 D-删除】</p>
+</blockquote>
+<h2 id="_3">背景</h2>
+<p>系统管理相关接口</p>
+<h2 id="_4">产品说明</h2>
+<h2 id="_5">关键流程说明</h2>
+<h2 id="_6">接口说明</h2>
+<h3 id="_7">通用接口</h3>
+<hr />
+<h3 id="_8">管理权限</h3>
+<hr />
+<h4 id="_9">登录验证码接口</h4>
+<h5 id="_10">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/login_code</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_11">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">mobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">登陆手机号</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_12">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;smscode&quot;: &quot;835898&quot;  //测试环境返回验证码，线上发送短信验证码
+    }
+}
+
+
+</code></pre>
+
+<h5 id="_13">错误实例</h5>
+<p>登录失败</p>
+<pre><code>
+{
+    &quot;c&quot;: 20023,
+    &quot;m&quot;: &quot;一分钟只能发送一次短信&quot;,
+    &quot;d&quot;: null
+}
+
+
+</code></pre>
+
+<h4 id="_14">登陆接口</h4>
+<h5 id="_15">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post   json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/login</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_16">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">mobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">登陆手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">password</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">登陆密码</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_17">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;username&quot;:&quot;15201008961&quot;,
+    &quot;password&quot;:&quot;123456&quot;
+}
+
+</code></pre>
+
+<h5 id="_18">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;adminInfo&quot;: {
+            &quot;nickName&quot;: &quot;xiaogang&quot;,
+            &quot;avatar&quot;: null
+        }
+    }
+}
+
+</code></pre>
+
+<h4 id="_19">账号管理（列表）</h4>
+<h5 id="_20">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/admin/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_21">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">username</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">姓名</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_22">返回实例</h5>
+<pre><code>{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 2,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 3,
+                &quot;username&quot;: &quot;xiaogang&quot;,
+                &quot;gender&quot;: null,
+                &quot;mobile&quot;: &quot;15201008962&quot;,
+                &quot;password&quot;: &quot;ae0a6d32ca6657556b2db2f876c9457d&quot;,
+                &quot;belongTo&quot;: null,
+                &quot;status&quot;: null,
+                &quot;privilege&quot;: null,
+                &quot;type&quot;: 0,
+                &quot;addTime&quot;: 1593442945017,
+                &quot;updateTime&quot;: 1593443991022,
+                &quot;roleIds&quot;: [
+                    2
+                ],
+                &quot;avatar&quot;: null,
+                &quot;lastLoginIp&quot;: null,
+                &quot;lastLoginTime&quot;: null,
+                &quot;deleted&quot;: false
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}
+
+</code></pre>
+
+<h4 id="_23">账号员详情</h4>
+<h5 id="_24">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/admin/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_25">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">管理员Id</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_26">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 2,
+        &quot;username&quot;: &quot;xiaogang&quot;,
+        &quot;gender&quot;: 1,
+        &quot;mobile&quot;: &quot;15201008961&quot;,
+        &quot;password&quot;: null,
+        &quot;belongTo&quot;: null,
+        &quot;status&quot;: 1,
+        &quot;privilege&quot;: null,
+        &quot;type&quot;: 1,
+        &quot;addTime&quot;: null,
+        &quot;updateTime&quot;: null,
+        &quot;roleIds&quot;: null,
+        &quot;avatar&quot;: null,
+        &quot;lastLoginIp&quot;: null,
+        &quot;lastLoginTime&quot;: null,
+        &quot;deleted&quot;: false
+    }
+}
+
+</code></pre>
+
+<h4 id="_27">添加管理员</h4>
+<h5 id="_28">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post   json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/admin/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_29">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">管理员Id</td>
+<td align="left">有更新否则添加</td>
+</tr>
+<tr>
+<td align="left">username</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">姓名</td>
+<td align="left">真实姓名</td>
+</tr>
+<tr>
+<td align="left">gender</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">性别</td>
+<td align="left">-1 女  1 男 0 未知</td>
+</tr>
+<tr>
+<td align="left">mobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">password</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">密码</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">status</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">状态</td>
+<td align="left">1  正常 -1 禁止登陆</td>
+</tr>
+<tr>
+<td align="left">roleId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">角色ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_30">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+     }
+}
+
+
+</code></pre>
+
+<h4 id="_31">添加角色</h4>
+<h5 id="_32">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post    json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/role/add</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_33">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">管理员Id</td>
+<td align="left">有更新否则添加</td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">角色名称</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">resources</td>
+<td align="center">否</td>
+<td align="left">int[]</td>
+<td align="left">分配权限数组ID列表</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_34">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+     }
+}
+
+
+</code></pre>
+
+<h4 id="_35">分页拉取角色列表</h4>
+<h5 id="_36">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/role/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_37">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">当前页码</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_38">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,   //分页相关
+        &quot;totalCount&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;unit&quot;: &quot;条&quot;,
+        &quot;extInfo&quot;: null,
+        &quot;result&quot;: [
+            {
+                &quot;id&quot;: 2, //角色ID
+                &quot;name&quot;: &quot;测试&quot;,//角色名称
+                &quot;privilege&quot;: [ //权限数组
+                    7
+                ],
+                &quot;createTime&quot;: null //创建时间
+            }
+        ],
+        &quot;endIndex&quot;: 10,
+        &quot;startIndex&quot;: 0,
+        &quot;firstPage&quot;: true,
+        &quot;lastPage&quot;: true,
+        &quot;nextPage&quot;: 1,
+        &quot;previousPage&quot;: 1,
+        &quot;pageCount&quot;: 1
+    }
+}
+
+
+</code></pre>
+
+<h4 id="_39">获取角色详情</h4>
+<h5 id="_40">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/role/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_41">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">角色ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_42">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;测试&quot;, //角色名称
+        &quot;privilege&quot;: [ //角色权限
+            7
+        ],
+        &quot;createTime&quot;: null
+    }
+}
+
+
+</code></pre>
+
+<h4 id="_43">删除角色</h4>
+<h5 id="_44">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/role/del</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_45">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">角色ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_46">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+
+</code></pre>
+
+<h4 id="_47">资源列表</h4>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/resources/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">fou</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;totalCount&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;unit&quot;: &quot;条&quot;,
+        &quot;extInfo&quot;: null,
+        &quot;startIndex&quot;: 0,
+        &quot;firstPage&quot;: true,
+        &quot;lastPage&quot;: true,
+        &quot;nextPage&quot;: 1,
+        &quot;previousPage&quot;: 1,
+        &quot;pageCount&quot;: 1,
+        &quot;result&quot;: [
+            {
+                &quot;id&quot;: 38, //id
+                &quot;title&quot;: &quot;删除角色&quot;,  //标题
+                &quot;path&quot;: &quot;/role/del&quot;,// url
+                &quot;parentId&quot;: 29, //父节点ID
+                &quot;type&quot;: 0, // 类型 0 普通
+                &quot;isMenu&quot;: 0, //是否菜单项  0 否 1 是
+                &quot;createTime&quot;: 1577196434017, //创建时间
+                &quot;privilegePos&quot;: 0, //权限位  非手填值
+                &quot;privilegeVal&quot;: 512, //权限值 非手填值
+                &quot;needAuth&quot;: 1 //是否需要权限校验  0 否 1 是
+            }
+        ],
+        &quot;endIndex&quot;: 10
+    }
+}
+
+
+</code></pre>
+
+<h4 id="_51">添加资源</h4>
+<h5 id="_52">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/resources/add</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_53">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">title</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">标题</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">path</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">访问路径</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">parentId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">父节点ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">类型 0 普通</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">isMenu</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">是否菜单 0 否 1 是</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">needAuth</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">是否需要权限 0 否 1 是</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+
+
+    }
+
+}
+
+
+</code></pre>
+
+<h4 id="_55">获取资源详情</h4>
+<h5 id="_56">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/resources/get</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_57">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">权限ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_58">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 38, //id
+        &quot;title&quot;: &quot;删除角色&quot;,  //标题
+        &quot;path&quot;: &quot;/role/del&quot;,// url
+        &quot;parentId&quot;: 29, //父节点ID
+        &quot;type&quot;: 0, // 类型 0 普通
+        &quot;isMenu&quot;: 0, //是否菜单项  0 否 1 是
+        &quot;createTime&quot;: 1577196434017, //创建时间
+        &quot;privilegePos&quot;: 0, //权限位  非手填值
+        &quot;privilegeVal&quot;: 512, //权限值 非手填值
+        &quot;needAuth&quot;: 1 //是否需要权限校验  0 否 1 是
+    }
+}
+
+
+</code></pre>
+
+<h4 id="_59">删除资源</h4>
+<h5 id="_60">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/resources/del</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_61">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">权限ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_62">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
