@@ -181,6 +181,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#2000" class="nav-link">2000  通知</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -206,6 +210,14 @@
 <li><a href="#1002">1002)  与我相关协议</a><ul>
 <li><a href="#_9">接口说明</a></li>
 <li><a href="#_10">协议说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2000">2000  通知</a><ul>
+<li><a href="#2001">2001 )  举手状态变更通知</a><ul>
+<li><a href="#_11">接口说明</a></li>
+<li><a href="#_12">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -370,6 +382,49 @@
                      &quot;eventType&quot;:1 , //事件类型 1 参与会议  2 一同参与会议 3 论文好奇  4  一同好奇
                      &quot;content&quot;:&quot;名称&quot; , //直播名称
                      &quot;targetId&quot;:1, //对象ID 用于跳转
+                  }
+        }
+
+
+</code></pre>
+
+<h2 id="2000">2000  通知</h2>
+<h3 id="2001">2001 )  举手状态变更通知</h3>
+<h4 id="_11">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">2001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">发送账号</td>
+<td align="center">9997</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群组消息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_12">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 2001,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{  
+                &quot;meetingId&quot;: &quot;xxxxxx&quot; , //直播ID
+                    &quot;handStatus&quot;: 0, // 举手状态 0 放下 1 举手  -1 拒绝
+                    &quot;count&quot;:123, //举手人数  
+                    &quot;uid&quot;:123 //用户ID  
                   }
         }
 
