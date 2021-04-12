@@ -413,7 +413,7 @@
 
 | http 请求方式          | put             |
 |:------------- |:---------------:|
-| url      |/meeting/handup |
+| url      |/meeting/handup/reject |
 
 #####  输入参数
 
