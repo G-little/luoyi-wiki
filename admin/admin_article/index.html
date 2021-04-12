@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>标签管理 - 络绎直播</title>
+        <title>论文管理 - 络绎直播</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -98,7 +98,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -115,7 +115,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">标签管理</a>
+    <a href="../admin_tag/" class="dropdown-item">标签管理</a>
 </li>
                                 </ul>
                             </li>
@@ -127,16 +127,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../admin_user/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -155,7 +145,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">标签管理</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">论文管理</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
               <ul class="nav flex-column">
@@ -184,10 +174,10 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">标签管理</h1>
+<h1 id="_1">论文管理</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">标签管理</a><ul>
+<li><a href="#_1">论文管理</a><ul>
 <li><a href="#_2">修订记录</a></li>
 <li><a href="#_3">背景</a></li>
 <li><a href="#_4">产品说明</a></li>
@@ -199,31 +189,24 @@
 <li><a href="#_10">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_11">添加接口</a><ul>
+<li><a href="#_11">详情接口</a><ul>
 <li><a href="#_12">请求说明</a></li>
 <li><a href="#_13">输入参数</a></li>
-<li><a href="#_14">请求实例</a></li>
-<li><a href="#_15">返回实例</a></li>
+<li><a href="#_14">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_16">详情接口</a><ul>
-<li><a href="#_17">请求说明</a></li>
-<li><a href="#_18">输入参数</a></li>
+<li><a href="#_15">更新接口</a><ul>
+<li><a href="#_16">请求说明</a></li>
+<li><a href="#_17">输入参数</a></li>
+<li><a href="#_18">请求实例</a></li>
 <li><a href="#_19">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_20">更新接口</a><ul>
+<li><a href="#_20">删除接口</a><ul>
 <li><a href="#_21">请求说明</a></li>
 <li><a href="#_22">输入参数</a></li>
 <li><a href="#_23">请求实例</a></li>
 <li><a href="#_24">返回实例</a></li>
-</ul>
-</li>
-<li><a href="#_25">删除接口</a><ul>
-<li><a href="#_26">请求说明</a></li>
-<li><a href="#_27">输入参数</a></li>
-<li><a href="#_28">请求实例</a></li>
-<li><a href="#_29">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -241,7 +224,7 @@
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
 <h2 id="_3">背景</h2>
-<p>标签管理相关接口</p>
+<p>论文管理相关接口</p>
 <h2 id="_4">产品说明</h2>
 <h2 id="_5">关键流程说明</h2>
 <h2 id="_6">接口说明</h2>
@@ -257,7 +240,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/tags/list</td>
+<td align="center">/admin/article/list</td>
 </tr>
 </tbody>
 </table>
@@ -274,11 +257,25 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">type</td>
+<td align="left">title</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">标题</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">subjects</td>
 <td align="center">否</td>
 <td align="left">int</td>
-<td align="left">标签类型</td>
-<td align="left">1 学科标签 2 细分领域标签 3 其他</td>
+<td align="left">学科ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">field</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">吸粉领域ID</td>
+<td align="left"></td>
 </tr>
 <tr>
 <td align="left">page</td>
@@ -302,103 +299,50 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;total&quot;: 195,
+        &quot;pageSize&quot;: 1,
+        &quot;total&quot;: null,
         &quot;currentPage&quot;: 1,
         &quot;list&quot;: [
             {
-                &quot;id&quot;: 197,
-                &quot;type&quot;: 2,
-                &quot;value&quot;: &quot;物理&quot;,
-                &quot;brief&quot;: null, //简介
-                &quot;addTime&quot;: null
+                &quot;id&quot;: 7436389,
+                &quot;subjects&quot;: &quot;12&quot;,
+                &quot;doi&quot;: &quot;https://doi.org/10.1101/2021.03.12.21253495&quot;,
+                &quot;postDate&quot;: 1615564800,
+                &quot;pdfUrl&quot;: &quot;https://www.medrxiv.org/content/10.1101/2021.03.12.21253495v1.full.pdf&quot;,
+                &quot;externalId&quot;: &quot;/content/10.1101/2021.03.12.21253495v1&quot;,
+                &quot;isNormal&quot;: 1,
+                &quot;createTime&quot;: 1615889932,
+                &quot;updateTime&quot;: null,
+                &quot;source&quot;: &quot;medrxiv&quot;,
+                &quot;isAuthentication&quot;: true,
+                &quot;status&quot;: true,
+                &quot;banReason&quot;: null,
+                &quot;contactAuthor&quot;: null,
+                &quot;contactAddress&quot;: null,
+                &quot;contactEmail&quot;: null,
+                &quot;scholarId&quot;: null,
+                &quot;adminId&quot;: null,
+                &quot;operateIp&quot;: null,
+                &quot;showId&quot;: &quot;cea0cf83408876feb7ef78795e202853&quot;,
+                &quot;title&quot;: &quot;&lt;h1 class=\&quot;highwire-cite-title\&quot; id=\&quot;page-title\&quot;&gt;All Models Are Useful: Bayesian Ensembling for Robust High Resolution COVID-19 Forecasting&lt;/h1&gt;&quot;,
+                &quot;authors&quot;: &quot;74999533,462839,75474071,75299388,75380655,74742442,74495286,74440341&quot;,
+                &quot;subjectsNumber&quot;: null,
+                &quot;keys&quot;: null,
+                &quot;brief&quot;: &quot;&lt;div class=\&quot;section abstract\&quot; id=\&quot;abstract-1\&quot;&gt;&lt;p id=\&quot;p-2\&quot;&gt;Timely, high-resolution forecasts of infectious disease incidence are useful for policy makers in deciding intervention measures and estimating healthcare resource burden. In this paper, we consider the task of forecasting COVID-19 confirmed cases at the county level for the United States. Although multiple methods have been explored for this task, their performance has varied across space and time due to noisy data and the inherent dynamic nature of the pandemic. We present a forecasting pipeline which incorporates probabilistic forecasts from multiple statistical, machine learning and mechanistic methods through a Bayesian ensembling scheme, and has been operational for nearly 6 months serving local, state and federal policymakers in the United States. While showing that the Bayesian ensemble is at least as good as the individual methods, we also show that each individual method contributes significantly for different spatial regions and time points. We compare our model's performance with other similar models being integrated into CDC-initiated COVID-19 Forecast Hub, and show better performance at longer forecast horizons. Finally, we also describe how such forecasts are used to increase lead time for training mechanistic scenario projections. Our work demonstrates that such a real-time high resolution forecasting pipeline can be developed by integrating multiple methods within a performance-based ensemble to support pandemic response.&lt;/p&gt;&lt;/div&gt;&quot;,
+                &quot;url&quot;: &quot;https://www.medrxiv.org/content/10.1101/2021.03.12.21253495v1&quot;
             }
         ],
         &quot;end&quot;: false,
         &quot;empty&quot;: false,
         &quot;startIndex&quot;: 0,
-        &quot;totalPage&quot;: 20
+        &quot;totalPage&quot;: null
     }
 }
 
 </code></pre>
 
-<h4 id="_11">添加接口</h4>
+<h4 id="_11">详情接口</h4>
 <h5 id="_12">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post json</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/tags/create</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_13">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">type</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">标签类型</td>
-<td align="left">1 学科标签 2 细分领域标签 3 其他</td>
-</tr>
-<tr>
-<td align="left">value</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">标签名</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">brief</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">标签简介</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_14">请求实例</h5>
-<pre><code class="json">
-{
-    &quot;type&quot;:3,
-    &quot;value&quot;:&quot;测试&quot;,
-    &quot;brief&quot;:&quot;这是一条测试&quot;
-}
-
-
-</code></pre>
-
-<h5 id="_15">返回实例</h5>
-<pre><code>
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-
-    }
-}
-
-</code></pre>
-
-<h4 id="_16">详情接口</h4>
-<h5 id="_17">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -409,11 +353,11 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/tags/read</td>
+<td align="center">/admin/article/read</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_18">输入参数</h5>
+<h5 id="_13">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -434,24 +378,55 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_19">返回实例</h5>
+<h5 id="_14">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;id&quot;: 198,
-        &quot;type&quot;: 3,
-        &quot;value&quot;: &quot;测试&quot;,
-        &quot;brief&quot;: &quot;这是一条测试&quot;,
+        &quot;id&quot;: 1,
+        &quot;subjects&quot;: &quot;3&quot;,
+        &quot;doi&quot;: &quot;https://doi.org/10.1101/2020.09.08.287011&quot;,
+        &quot;postDate&quot;: 1599580800,
+        &quot;pdfUrl&quot;: &quot;https://www.biorxiv.org/content/10.1101/2020.09.08.287011v1.full.pdf&quot;,
+        &quot;externalId&quot;: &quot;10.1101/2020.09.08.287011v1&quot;,
+        &quot;isNormal&quot;: 1,
+        &quot;createTime&quot;: 1608889848,
+        &quot;updateTime&quot;: null,
+        &quot;source&quot;: &quot;biorxiv&quot;,
+        &quot;isAuthentication&quot;: true,
+        &quot;status&quot;: true,
+        &quot;banReason&quot;: null,
+        &quot;contactAuthor&quot;: null,
+        &quot;contactAddress&quot;: null,
+        &quot;contactEmail&quot;: null,
+        &quot;scholarId&quot;: null,
+        &quot;adminId&quot;: null,
+        &quot;operateIp&quot;: null,
+        &quot;showId&quot;: &quot;ac73740a2654b8ffc1c090fca04b6d86&quot;,
+        &quot;title&quot;: &quot;&lt;h1 class=\&quot;highwire-cite-title\&quot; id=\&quot;page-title\&quot;&gt;Leaf form diversification in an heirloom tomato results from alterations in two different &lt;em&gt;HOMEOBOX&lt;/em&gt; genes&lt;/h1&gt;&quot;,
+        &quot;authors&quot;: &quot;1,2,3,4,5,6,7&quot;,
+        &quot;subjectsNumber&quot;: null,
+        &quot;keys&quot;: null,
+        &quot;brief&quot;: &quot;&lt;div class=\&quot;section abstract\&quot; id=\&quot;abstract-1\&quot;&gt;&lt;p id=\&quot;p-4\&quot;&gt;Domesticated plants and animals display tremendous diversity in various phenotypic traits and often this diversity is seen within the same species. Tomato (&lt;em&gt;Solanum lycopersicum&lt;/em&gt;; Solanaceae) cultivars show wide variation in leaf morphology, but the influence of breeding efforts in sculpting this diversity is not known. Here, we demonstrate that a single nucleotide deletion in the homeobox motif of &lt;em&gt;BIPINNATA&lt;/em&gt;, which is a &lt;em&gt;BEL-LIKE HOMEODOMAIN&lt;/em&gt; gene, led to a highly complex leaf phenotype in an heirloom tomato, Silvery Fir Tree (SiFT). Additionally, a comparative gene network analysis revealed that reduced expression of the ortholog of &lt;em&gt;WUSCHEL RELATED HOMEOBOX 1&lt;/em&gt; is also important for the narrow leaflet phenotype seen in SiFT. Phylogenetic and comparative genome analysis using whole-genome sequencing data suggests that the &lt;em&gt;bip&lt;/em&gt; mutation in SiFT is likely a &lt;em&gt;de novo&lt;/em&gt; mutation, instead of standing genetic variation. These results provide new insights into natural variation in phenotypic traits introduced into crops during improvement processes after domestication.&lt;/p&gt;&lt;/div&gt;&quot;,
+        &quot;url&quot;: &quot;https://www.biorxiv.org/content/10.1101/2020.09.08.287011v1&quot;,
+        &quot;visitorCount&quot;: 7,
+        &quot;curiousCount&quot;: 4,
+        &quot;tags&quot;: [
+            {
+                &quot;type&quot;: 2,
+                &quot;tagId&quot;: 1,
+                &quot;value&quot;: &quot;测试&quot;
+            }
+        ],
         &quot;addTime&quot;: null
     }
 }
 
 </code></pre>
 
-<h4 id="_20">更新接口</h4>
-<h5 id="_21">请求说明</h5>
+<h4 id="_15">更新接口</h4>
+<h5 id="_16">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -462,7 +437,126 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/tags/update</td>
+<td align="center">/admin/article/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_17">输入参数</h5>
+<p><strong>article参数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">subjects</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">标签类型</td>
+<td align="left">1 学科标签 2 细分领域标签 3 其他</td>
+</tr>
+<tr>
+<td align="left">tags</td>
+<td align="center">否</td>
+<td align="left">json</td>
+<td align="left">标签</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>tags参数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">type</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">标签类型</td>
+<td align="left">1 学科 2 细分领域 3 其他</td>
+</tr>
+<tr>
+<td align="left">tagId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">标签ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">标签值</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_18">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;id&quot;:1,
+    &quot;subjects&quot;:3,
+    &quot;tags&quot;:[
+        {
+            &quot;type&quot;:&quot;2&quot;,
+            &quot;tagId&quot;:1,
+            &quot;value&quot;:&quot;测试&quot;
+        }
+    ]
+}
+
+
+</code></pre>
+
+<h5 id="_19">返回实例</h5>
+<pre><code>
+{
+    &quot;id&quot;:1,
+    &quot;subjects&quot;:3,
+    &quot;tags&quot;:[
+        {
+            &quot;type&quot;:&quot;2&quot;,
+            &quot;tagId&quot;:1,
+            &quot;value&quot;:&quot;测试&quot;
+        }
+    ]
+}
+</code></pre>
+
+<h4 id="_20">删除接口</h4>
+<h5 id="_21">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/article/delete</td>
 </tr>
 </tbody>
 </table>
@@ -485,103 +579,18 @@
 <td align="left">ID</td>
 <td align="left"></td>
 </tr>
-<tr>
-<td align="left">type</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">标签类型</td>
-<td align="left">1 学科标签 2 细分领域标签 3 其他</td>
-</tr>
-<tr>
-<td align="left">value</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">标签名</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">brief</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">标签简介</td>
-<td align="left"></td>
-</tr>
 </tbody>
 </table>
 <h5 id="_23">请求实例</h5>
 <pre><code class="json">
 {
     &quot;id&quot;:198,
-    &quot;type&quot;:3,
-    &quot;value&quot;:&quot;测试&quot;,
-    &quot;brief&quot;:&quot;这是一条测试2&quot;
 }
 
 
 </code></pre>
 
 <h5 id="_24">返回实例</h5>
-<pre><code>
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;id&quot;: 198,
-        &quot;type&quot;: 3,
-        &quot;value&quot;: &quot;测试&quot;,
-        &quot;brief&quot;: &quot;这是一条测试2&quot;
-    }
-}
-
-</code></pre>
-
-<h4 id="_25">删除接口</h4>
-<h5 id="_26">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/tags/delete</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_27">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_28">请求实例</h5>
-<pre><code class="json">
-{
-    &quot;id&quot;:198,
-}
-
-
-</code></pre>
-
-<h5 id="_29">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
