@@ -21,4 +21,5 @@ nav:
     - 系统管理: './admin/admin_sys.md'  
     - 用户管理: './admin/admin_user.md'  
     - 标签管理: './admin/admin_tag.md'  
+    - 论文管理: './admin/admin_article.md'  
   
