@@ -967,6 +967,8 @@
 
 #####  返回实例
 
+**B开头**
+
 ```json
 
 {
@@ -982,6 +984,26 @@
         "name": null,
         "uid": 10002,
         "avatar": "image/202104/62f4cd5164f3ad1b75405afb6fa9e379.jpg",
+        "followStatus": 0
+    }
+}
+
+```
+
+
+**A开头**
+
+
+```json
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "uid": 10001,
+        "avatar": null,
+        "name": null,
+        "workplace": null,
+        "jobTitle": null,
         "followStatus": 0
     }
 }
