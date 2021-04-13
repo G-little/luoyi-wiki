@@ -369,6 +369,14 @@
 <li><a href="#_111">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#27">2.7 踢出用户</a><ul>
+<li><a href="#_112">接口说明</a></li>
+<li><a href="#_113">请求说明</a></li>
+<li><a href="#_114">输入参数</a></li>
+<li><a href="#_115">错误说明</a></li>
+<li><a href="#_116">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1792,6 +1800,64 @@
         &quot;workplace&quot;: null,
         &quot;jobTitle&quot;: null,
         &quot;followStatus&quot;: 0
+    }
+}
+
+</code></pre>
+
+<h4 id="27">2.7 踢出用户</h4>
+<h5 id="_112">接口说明</h5>
+<h5 id="_113">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">put</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/meeting/kick_user</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_114">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">meetingId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">是</td>
+<td align="left">会议ID</td>
+</tr>
+<tr>
+<td align="left">uid</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">是</td>
+<td align="left">踢出的用户ID</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_115">错误说明</h5>
+<h5 id="_116">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
