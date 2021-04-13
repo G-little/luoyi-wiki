@@ -353,6 +353,14 @@
 <li><a href="#_101">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#26">2.6 根据邀请码获取信息</a><ul>
+<li><a href="#_102">接口说明</a></li>
+<li><a href="#_103">请求说明</a></li>
+<li><a href="#_104">输入参数</a></li>
+<li><a href="#_105">错误说明</a></li>
+<li><a href="#_106">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1625,6 +1633,66 @@
         &quot;empty&quot;: false,
         &quot;startIndex&quot;: 0,
         &quot;totalPage&quot;: 1
+    }
+}
+
+</code></pre>
+
+<h4 id="26">2.6 根据邀请码获取信息</h4>
+<h5 id="_102">接口说明</h5>
+<h5 id="_103">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/i/code2data</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_104">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">code</td>
+<td align="center">是</td>
+<td align="left">sting</td>
+<td align="left">是</td>
+<td align="left">邀请码</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_105">错误说明</h5>
+<h5 id="_106">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 327,
+        &quot;meetingId&quot;: 361,
+        &quot;content&quot;: &quot;c6&quot;,
+        &quot;mayStartTime&quot;: null,
+        &quot;status&quot;: -1,
+        &quot;type&quot;: null,
+        &quot;name&quot;: null,
+        &quot;uid&quot;: 10002,
+        &quot;avatar&quot;: &quot;image/202104/62f4cd5164f3ad1b75405afb6fa9e379.jpg&quot;,
+        &quot;followStatus&quot;: 0
     }
 }
 
