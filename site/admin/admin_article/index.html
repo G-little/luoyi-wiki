@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>论文管理 - 络绎直播</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">络绎直播</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">首页 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../.." class="dropdown-item">Main</a>
+</li>
+                                    
+<li>
+    <a href="../../luoyi/topic/" class="dropdown-item">话题</a>
+</li>
+                                    
+<li>
+    <a href="../../luoyi/search/" class="dropdown-item">搜索</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../user/user/" class="dropdown-item">Main</a>
+</li>
+                                    
+<li>
+    <a href="../../luoyi/profile/" class="dropdown-item">Profile</a>
+</li>
+                                    
+<li>
+    <a href="../../luoyi/user/" class="dropdown-item">个人主页</a>
+</li>
+                                    
+<li>
+    <a href="../../luoyi/fans/" class="dropdown-item">关注/好友</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">直播 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../luoyi/meeting/" class="dropdown-item">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">论文 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../luoyi/article/" class="dropdown-item">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">通知 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../luoyi/im/" class="dropdown-item">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../admin/" class="dropdown-item">Main</a>
+</li>
+                                    
+<li>
+    <a href="../admin_sys/" class="dropdown-item">系统管理</a>
+</li>
+                                    
+<li>
+    <a href="../admin_user/" class="dropdown-item">用户管理</a>
+</li>
+                                    
+<li>
+    <a href="../admin_tag/" class="dropdown-item">标签管理</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">论文管理</a>
+</li>
+                                    
+<li>
+    <a href="../admin_meeting/" class="dropdown-item">会议管理</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../admin_tag/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../admin_meeting/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">论文管理</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">背景</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">产品说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">关键流程说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">论文管理</h1>
+<div class="toc">
+<ul>
+<li><a href="#_1">论文管理</a><ul>
+<li><a href="#_2">修订记录</a></li>
+<li><a href="#_3">背景</a></li>
+<li><a href="#_4">产品说明</a></li>
+<li><a href="#_5">关键流程说明</a></li>
+<li><a href="#_6">接口说明</a><ul>
+<li><a href="#_7">列表接口</a><ul>
+<li><a href="#_8">请求说明</a></li>
+<li><a href="#_9">输入参数</a></li>
+<li><a href="#_10">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_11">详情接口</a><ul>
+<li><a href="#_12">请求说明</a></li>
+<li><a href="#_13">输入参数</a></li>
+<li><a href="#_14">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_15">更新接口</a><ul>
+<li><a href="#_16">请求说明</a></li>
+<li><a href="#_17">输入参数</a></li>
+<li><a href="#_18">请求实例</a></li>
+<li><a href="#_19">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_20">删除接口</a><ul>
+<li><a href="#_21">请求说明</a></li>
+<li><a href="#_22">输入参数</a></li>
+<li><a href="#_23">请求实例</a></li>
+<li><a href="#_24">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="_2">修订记录</h2>
+<hr />
+<p>日期 | 作者 | 修订类型 | 修订内容 | 版本
+---- | ---- | ---- | ---- | ---- |
+2020年04月10日|冷立纲|A|新增设计方案|1.0</p>
+<blockquote>
+<p>【修订类型：A-新增  M-修改 D-删除】</p>
+</blockquote>
+<h2 id="_3">背景</h2>
+<p>论文管理相关接口</p>
+<h2 id="_4">产品说明</h2>
+<h2 id="_5">关键流程说明</h2>
+<h2 id="_6">接口说明</h2>
+<h4 id="_7">列表接口</h4>
+<h5 id="_8">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/article/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_9">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">title</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">标题</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">subjects</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">学科ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">field</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">吸粉领域ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_10">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 1,
+        &quot;total&quot;: null,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 7436389,
+                &quot;subjects&quot;: &quot;12&quot;,
+                &quot;doi&quot;: &quot;https://doi.org/10.1101/2021.03.12.21253495&quot;,
+                &quot;postDate&quot;: 1615564800,
+                &quot;pdfUrl&quot;: &quot;https://www.medrxiv.org/content/10.1101/2021.03.12.21253495v1.full.pdf&quot;,
+                &quot;externalId&quot;: &quot;/content/10.1101/2021.03.12.21253495v1&quot;,
+                &quot;isNormal&quot;: 1,
+                &quot;createTime&quot;: 1615889932,
+                &quot;updateTime&quot;: null,
+                &quot;source&quot;: &quot;medrxiv&quot;,
+                &quot;isAuthentication&quot;: true,
+                &quot;status&quot;: true,
+                &quot;banReason&quot;: null,
+                &quot;contactAuthor&quot;: null,
+                &quot;contactAddress&quot;: null,
+                &quot;contactEmail&quot;: null,
+                &quot;scholarId&quot;: null,
+                &quot;adminId&quot;: null,
+                &quot;operateIp&quot;: null,
+                &quot;showId&quot;: &quot;cea0cf83408876feb7ef78795e202853&quot;,
+                &quot;title&quot;: &quot;&lt;h1 class=\&quot;highwire-cite-title\&quot; id=\&quot;page-title\&quot;&gt;All Models Are Useful: Bayesian Ensembling for Robust High Resolution COVID-19 Forecasting&lt;/h1&gt;&quot;,
+                &quot;authors&quot;: &quot;74999533,462839,75474071,75299388,75380655,74742442,74495286,74440341&quot;,
+                &quot;subjectsNumber&quot;: null,
+                &quot;keys&quot;: null,
+                &quot;brief&quot;: &quot;&lt;div class=\&quot;section abstract\&quot; id=\&quot;abstract-1\&quot;&gt;&lt;p id=\&quot;p-2\&quot;&gt;Timely, high-resolution forecasts of infectious disease incidence are useful for policy makers in deciding intervention measures and estimating healthcare resource burden. In this paper, we consider the task of forecasting COVID-19 confirmed cases at the county level for the United States. Although multiple methods have been explored for this task, their performance has varied across space and time due to noisy data and the inherent dynamic nature of the pandemic. We present a forecasting pipeline which incorporates probabilistic forecasts from multiple statistical, machine learning and mechanistic methods through a Bayesian ensembling scheme, and has been operational for nearly 6 months serving local, state and federal policymakers in the United States. While showing that the Bayesian ensemble is at least as good as the individual methods, we also show that each individual method contributes significantly for different spatial regions and time points. We compare our model's performance with other similar models being integrated into CDC-initiated COVID-19 Forecast Hub, and show better performance at longer forecast horizons. Finally, we also describe how such forecasts are used to increase lead time for training mechanistic scenario projections. Our work demonstrates that such a real-time high resolution forecasting pipeline can be developed by integrating multiple methods within a performance-based ensemble to support pandemic response.&lt;/p&gt;&lt;/div&gt;&quot;,
+                &quot;url&quot;: &quot;https://www.medrxiv.org/content/10.1101/2021.03.12.21253495v1&quot;
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="_11">详情接口</h4>
+<h5 id="_12">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/article/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_13">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_14">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 1,
+        &quot;subjects&quot;: &quot;3&quot;,
+        &quot;doi&quot;: &quot;https://doi.org/10.1101/2020.09.08.287011&quot;,
+        &quot;postDate&quot;: 1599580800,
+        &quot;pdfUrl&quot;: &quot;https://www.biorxiv.org/content/10.1101/2020.09.08.287011v1.full.pdf&quot;,
+        &quot;externalId&quot;: &quot;10.1101/2020.09.08.287011v1&quot;,
+        &quot;isNormal&quot;: 1,
+        &quot;createTime&quot;: 1608889848,
+        &quot;updateTime&quot;: null,
+        &quot;source&quot;: &quot;biorxiv&quot;,
+        &quot;isAuthentication&quot;: true,
+        &quot;status&quot;: true,
+        &quot;banReason&quot;: null,
+        &quot;contactAuthor&quot;: null,
+        &quot;contactAddress&quot;: null,
+        &quot;contactEmail&quot;: null,
+        &quot;scholarId&quot;: null,
+        &quot;adminId&quot;: null,
+        &quot;operateIp&quot;: null,
+        &quot;showId&quot;: &quot;ac73740a2654b8ffc1c090fca04b6d86&quot;,
+        &quot;title&quot;: &quot;&lt;h1 class=\&quot;highwire-cite-title\&quot; id=\&quot;page-title\&quot;&gt;Leaf form diversification in an heirloom tomato results from alterations in two different &lt;em&gt;HOMEOBOX&lt;/em&gt; genes&lt;/h1&gt;&quot;,
+        &quot;authors&quot;: &quot;1,2,3,4,5,6,7&quot;,
+        &quot;subjectsNumber&quot;: null,
+        &quot;keys&quot;: null,
+        &quot;brief&quot;: &quot;&lt;div class=\&quot;section abstract\&quot; id=\&quot;abstract-1\&quot;&gt;&lt;p id=\&quot;p-4\&quot;&gt;Domesticated plants and animals display tremendous diversity in various phenotypic traits and often this diversity is seen within the same species. Tomato (&lt;em&gt;Solanum lycopersicum&lt;/em&gt;; Solanaceae) cultivars show wide variation in leaf morphology, but the influence of breeding efforts in sculpting this diversity is not known. Here, we demonstrate that a single nucleotide deletion in the homeobox motif of &lt;em&gt;BIPINNATA&lt;/em&gt;, which is a &lt;em&gt;BEL-LIKE HOMEODOMAIN&lt;/em&gt; gene, led to a highly complex leaf phenotype in an heirloom tomato, Silvery Fir Tree (SiFT). Additionally, a comparative gene network analysis revealed that reduced expression of the ortholog of &lt;em&gt;WUSCHEL RELATED HOMEOBOX 1&lt;/em&gt; is also important for the narrow leaflet phenotype seen in SiFT. Phylogenetic and comparative genome analysis using whole-genome sequencing data suggests that the &lt;em&gt;bip&lt;/em&gt; mutation in SiFT is likely a &lt;em&gt;de novo&lt;/em&gt; mutation, instead of standing genetic variation. These results provide new insights into natural variation in phenotypic traits introduced into crops during improvement processes after domestication.&lt;/p&gt;&lt;/div&gt;&quot;,
+        &quot;url&quot;: &quot;https://www.biorxiv.org/content/10.1101/2020.09.08.287011v1&quot;,
+        &quot;visitorCount&quot;: 7,
+        &quot;curiousCount&quot;: 4,
+        &quot;tags&quot;: [
+            {
+                &quot;type&quot;: 2,
+                &quot;tagId&quot;: 1,
+                &quot;value&quot;: &quot;测试&quot;
+            }
+        ],
+        &quot;addTime&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="_15">更新接口</h4>
+<h5 id="_16">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/article/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_17">输入参数</h5>
+<p><strong>article参数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">subjects</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">标签类型</td>
+<td align="left">1 学科标签 2 细分领域标签 3 其他</td>
+</tr>
+<tr>
+<td align="left">tags</td>
+<td align="center">否</td>
+<td align="left">json</td>
+<td align="left">标签</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>tags参数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">type</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">标签类型</td>
+<td align="left">1 学科 2 细分领域 3 其他</td>
+</tr>
+<tr>
+<td align="left">tagId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">标签ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">标签值</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_18">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;id&quot;:1,
+    &quot;subjects&quot;:3,
+    &quot;tags&quot;:[
+        {
+            &quot;type&quot;:&quot;2&quot;,
+            &quot;tagId&quot;:1,
+            &quot;value&quot;:&quot;测试&quot;
+        }
+    ]
+}
+
+
+</code></pre>
+
+<h5 id="_19">返回实例</h5>
+<pre><code>
+{
+    &quot;id&quot;:1,
+    &quot;subjects&quot;:3,
+    &quot;tags&quot;:[
+        {
+            &quot;type&quot;:&quot;2&quot;,
+            &quot;tagId&quot;:1,
+            &quot;value&quot;:&quot;测试&quot;
+        }
+    ]
+}
+</code></pre>
+
+<h4 id="_20">删除接口</h4>
+<h5 id="_21">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/article/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_22">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_23">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;id&quot;:198,
+}
+
+
+</code></pre>
+
+<h5 id="_24">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+    }
+}
+
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
