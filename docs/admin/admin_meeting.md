@@ -268,6 +268,7 @@ __meeting参数__
 | coverUrl   | 否 | string  |  封面 |   |
 | coverSize   | 否 | string  | 封面尺寸 `x*y` |   |
 | tags   | 否 | json  |   标签 |  |
+| relatedList   | 否 | []json   |   相关数据 |  |
 
 __tags参数__
 
@@ -278,6 +279,15 @@ __tags参数__
 | value   | 是 | string  |   标签值 |  |
 
 
+
+__relatedList参数__
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| name   | 是 | string  |  名称 |     |
+| value   | 是 | string  |   值 |  |
+| type   | 是 | int  |   类型 |  1 论文 2 技术 3 人物 4 院校 |
+| targetId   | 否 | int  |   类型 |   关联ID |
 
 
 
@@ -304,7 +314,12 @@ __tags参数__
             10003
         ],
         "privacyLevel": "public",
-        "save": false
+        "save": false,
+        "relatedList":[{
+            "name":"名称",
+            "value":"值",
+            "type":"类型"
+        }]
     }
 }
 

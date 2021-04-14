@@ -274,3 +274,104 @@ __tags参数__
 
 ```
 
+
+####  下载用户列表
+
+##### 请求说明
+
+| http 请求方式          | get |
+|:------------- |:---------------:|
+| url      |/admin/article/download_list |
+
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id   | 是 | int  |  ID | |
+| page   | 否 | int  |  分页 | 默认值1 |
+| limit   | 否 | int  |  每页条数 | 默认值10 |
+
+
+
+
+#####  返回实例
+
+```
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 1,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 234,
+                "uid": 10059,
+                "mobile": "18813170185",
+                "email": "lihang@mittrchina.com",
+                "addTime": "2021-04-09 19:46:16"
+            }
+        ],
+        "end": false,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+```
+
+
+####  浏览用户列表
+
+##### 请求说明
+
+| http 请求方式          | get |
+|:------------- |:---------------:|
+| url      |/admin/article/visitor_list |
+
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id   | 是 | int  |  ID | |
+| page   | 否 | int  |  分页 | 默认值1 |
+| limit   | 否 | int  |  每页条数 | 默认值10 |
+
+
+
+
+#####  返回实例
+
+```
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 1,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 234,
+                "uid": 10059,
+                "mobile": "18813170185",
+                "email": "lihang@mittrchina.com",
+                "addTime": "2021-04-09 19:46:16"
+            }
+        ],
+        "end": false,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+```
+
+
+
+
