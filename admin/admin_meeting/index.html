@@ -240,6 +240,12 @@
 <li><a href="#_33">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#_34">踢出用户</a><ul>
+<li><a href="#_35">请求说明</a></li>
+<li><a href="#_36">输入参数</a></li>
+<li><a href="#_37">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1052,6 +1058,62 @@
         &quot;empty&quot;: false,
         &quot;startIndex&quot;: 0,
         &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="_34">踢出用户</h4>
+<h5 id="_35">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">put</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/meeting/kickout_user</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_36">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">meetingId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">会议ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">uid</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_37">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
