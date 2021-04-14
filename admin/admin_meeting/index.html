@@ -757,6 +757,13 @@
 <td align="left">标签</td>
 <td align="left"></td>
 </tr>
+<tr>
+<td align="left">relatedList</td>
+<td align="center">否</td>
+<td align="left">[]json</td>
+<td align="left">相关数据</td>
+<td align="left"></td>
+</tr>
 </tbody>
 </table>
 <p><strong>tags参数</strong></p>
@@ -794,6 +801,48 @@
 </tr>
 </tbody>
 </table>
+<p><strong>relatedList参数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">name</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">名称</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">值</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">类型</td>
+<td align="left">1 论文 2 技术 3 人物 4 院校</td>
+</tr>
+<tr>
+<td align="left">targetId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">类型</td>
+<td align="left">关联ID</td>
+</tr>
+</tbody>
+</table>
 <h5 id="_23">请求实例</h5>
 <pre><code class="json">
 {
@@ -815,7 +864,12 @@
             10003
         ],
         &quot;privacyLevel&quot;: &quot;public&quot;,
-        &quot;save&quot;: false
+        &quot;save&quot;: false,
+        &quot;relatedList&quot;:[{
+            &quot;name&quot;:&quot;名称&quot;,
+            &quot;value&quot;:&quot;值&quot;,
+            &quot;type&quot;:&quot;类型&quot;
+        }]
     }
 }
 
