@@ -227,6 +227,18 @@
 <li><a href="#_24">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#_25">下载用户列表</a><ul>
+<li><a href="#_26">请求说明</a></li>
+<li><a href="#_27">输入参数</a></li>
+<li><a href="#_28">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_29">浏览用户列表</a><ul>
+<li><a href="#_30">请求说明</a></li>
+<li><a href="#_31">输入参数</a></li>
+<li><a href="#_32">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -617,6 +629,160 @@
     }
 }
 
+</code></pre>
+
+<h4 id="_25">下载用户列表</h4>
+<h5 id="_26">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/article/download_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_27">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left">默认值1</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">每页条数</td>
+<td align="left">默认值10</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_28">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 1,
+        &quot;total&quot;: null,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 234,
+                &quot;uid&quot;: 10059,
+                &quot;mobile&quot;: &quot;18813170185&quot;,
+                &quot;email&quot;: &quot;lihang@mittrchina.com&quot;,
+                &quot;addTime&quot;: &quot;2021-04-09 19:46:16&quot;
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+</code></pre>
+
+<h4 id="_29">浏览用户列表</h4>
+<h5 id="_30">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/article/visitor_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_31">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left">默认值1</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">每页条数</td>
+<td align="left">默认值10</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_32">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 1,
+        &quot;total&quot;: null,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 234,
+                &quot;uid&quot;: 10059,
+                &quot;mobile&quot;: &quot;18813170185&quot;,
+                &quot;email&quot;: &quot;lihang@mittrchina.com&quot;,
+                &quot;addTime&quot;: &quot;2021-04-09 19:46:16&quot;
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
 </code></pre></div>
             </div>
         </div>

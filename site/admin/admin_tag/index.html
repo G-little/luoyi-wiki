@@ -252,6 +252,18 @@
 <li><a href="#_41">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#_42">添加相关</a><ul>
+<li><a href="#_43">请求说明</a></li>
+<li><a href="#_44">输入参数</a></li>
+<li><a href="#_45">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_46">添加相关</a><ul>
+<li><a href="#_47">请求说明</a></li>
+<li><a href="#_48">输入参数</a></li>
+<li><a href="#_49">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -949,6 +961,146 @@
         &quot;empty&quot;: false,
         &quot;startIndex&quot;: 0,
         &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="_42">添加相关</h4>
+<h5 id="_43">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/tags/add_entity</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">tagType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">标签类型</td>
+<td align="left">1 学科标签 2 细分领域标签 3 其他</td>
+</tr>
+<tr>
+<td align="left">tagId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">标签ID</td>
+<td align="left">标签ID</td>
+</tr>
+<tr>
+<td align="left">entityType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">ID类别</td>
+<td align="left">3:论文 2:会议 1：用户</td>
+</tr>
+<tr>
+<td align="left">entityId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_45">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="_46">添加相关</h4>
+<h5 id="_47">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/tags/remove_entity</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_48">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">tagType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">标签类型</td>
+<td align="left">1 学科标签 2 细分领域标签 3 其他</td>
+</tr>
+<tr>
+<td align="left">tagId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">标签ID</td>
+<td align="left">标签ID</td>
+</tr>
+<tr>
+<td align="left">entityType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">ID类别</td>
+<td align="left">3:论文 2:会议 1：用户</td>
+</tr>
+<tr>
+<td align="left">entityId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
