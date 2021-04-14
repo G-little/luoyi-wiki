@@ -234,6 +234,12 @@
 <li><a href="#_29">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#_30">评论列表接口</a><ul>
+<li><a href="#_31">请求说明</a></li>
+<li><a href="#_32">输入参数</a></li>
+<li><a href="#_33">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -609,35 +615,47 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;id&quot;: 1,
-        &quot;streamId&quot;: null,
-        &quot;type&quot;: 0,
-        &quot;content&quot;: &quot;这是一次测试&quot;,
-        &quot;uid&quot;: 10002,
-        &quot;verifyCode&quot;: null,
-        &quot;mayStartTime&quot;: 1616767200000,
-        &quot;orgId&quot;: null,
-        &quot;userLimit&quot;: 30,
-        &quot;startTime&quot;: null,
-        &quot;endTime&quot;: 1617362193219,
-        &quot;deleted&quot;: false,
-        &quot;addTime&quot;: 1616765791049,
-        &quot;subscribeCount&quot;: 0,
-        &quot;notifyStatus&quot;: 0,
-        &quot;playUrl&quot;: null,
-        &quot;timeLen&quot;: null,
-        &quot;tags&quot;: null,
-        &quot;userBrief&quot;: [
-            {
-                &quot;uid&quot;: 10002,
-                &quot;role&quot;: 1
-            }
-        ],
-        &quot;status&quot;: -1,
-        &quot;privacyLevel&quot;: &quot;public&quot;,
-        &quot;save&quot;: false,
-        &quot;coverUrl&quot;: null,
-        &quot;coverSize&quot;: null
+        &quot;meetingDTO&quot;: {
+            &quot;id&quot;: 2,
+            &quot;streamId&quot;: null,
+            &quot;type&quot;: 0,
+            &quot;content&quot;: &quot;测试&quot;,
+            &quot;uid&quot;: 10024,
+            &quot;verifyCode&quot;: &quot;123456&quot;,
+            &quot;mayStartTime&quot;: 1617352740000,
+            &quot;orgId&quot;: null,
+            &quot;userLimit&quot;: 30,
+            &quot;startTime&quot;: 1617351450940,
+            &quot;endTime&quot;: 1617352500098,
+            &quot;deleted&quot;: false,
+            &quot;addTime&quot;: 1617345589809,
+            &quot;subscribeCount&quot;: 0,
+            &quot;notifyStatus&quot;: 0,
+            &quot;playUrl&quot;: null,
+            &quot;timeLen&quot;: null,
+            &quot;tags&quot;: null,
+            &quot;userBrief&quot;: [
+                {
+                    &quot;uid&quot;: 10024,
+                    &quot;role&quot;: 1
+                }
+            ],
+            &quot;status&quot;: -1,
+            &quot;privacyLevel&quot;: &quot;private&quot;,
+            &quot;save&quot;: false,
+            &quot;coverUrl&quot;: null,
+            &quot;coverSize&quot;: null
+        },
+        &quot;userBrief&quot;: {
+            &quot;uid&quot;: 10024,
+            &quot;fansCount&quot;: 4,
+            &quot;followCount&quot;: 1,
+            &quot;meetingCount&quot;: 0,
+            &quot;joinMeetingCount&quot;: 0,
+            &quot;curiousCount&quot;: 0,
+            &quot;addTime&quot;: 1617799692605
+        },
+        &quot;relatedList&quot;: []
     }
 }
 
@@ -915,7 +933,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/article/delete</td>
+<td align="center">/admin/meeting/delete</td>
 </tr>
 </tbody>
 </table>
@@ -955,6 +973,85 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
+    }
+}
+
+</code></pre>
+
+<h4 id="_30">评论列表接口</h4>
+<h5 id="_31">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/meeting/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_32">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left">会议ID</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_33">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 20,
+        &quot;total&quot;: null,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;meetingId&quot;: 168,
+                &quot;uid&quot;: 10032,
+                &quot;msg&quot;: &quot;send group message success.&quot;,
+                &quot;addTime&quot;: 1617955392742,
+                &quot;name&quot;: &quot;陈破空&quot;
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
     }
 }
 
