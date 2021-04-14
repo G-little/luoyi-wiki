@@ -376,7 +376,7 @@ __relatedList参数__
 
 | http 请求方式          | post |
 |:------------- |:---------------:|
-| url      |/admin/article/delete |
+| url      |/admin/meeting/delete |
 
 
 #####  输入参数
@@ -406,6 +406,57 @@ __relatedList参数__
     "c": 0,
     "m": null,
     "d": {
+    }
+}
+
+```
+
+
+
+
+####  评论列表接口
+
+##### 请求说明
+
+| http 请求方式          | get  |
+|:------------- |:---------------:|
+| url      |/admin/meeting/list |
+
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id   | 是 | int  |  ID | 会议ID |
+| page   | 否 | int  |  分页 | |
+| limit   | 否 | int  |  单页条数 | |
+
+
+#####  返回实例
+
+```
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 20,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 1,
+                "meetingId": 168,
+                "uid": 10032,
+                "msg": "send group message success.",
+                "addTime": 1617955392742,
+                "name": "陈破空"
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
     }
 }
 
