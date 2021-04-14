@@ -205,35 +205,47 @@ __tags参数__
     "c": 0,
     "m": null,
     "d": {
-        "id": 1,
-        "streamId": null,
-        "type": 0,
-        "content": "这是一次测试",
-        "uid": 10002,
-        "verifyCode": null,
-        "mayStartTime": 1616767200000,
-        "orgId": null,
-        "userLimit": 30,
-        "startTime": null,
-        "endTime": 1617362193219,
-        "deleted": false,
-        "addTime": 1616765791049,
-        "subscribeCount": 0,
-        "notifyStatus": 0,
-        "playUrl": null,
-        "timeLen": null,
-        "tags": null,
-        "userBrief": [
-            {
-                "uid": 10002,
-                "role": 1
-            }
-        ],
-        "status": -1,
-        "privacyLevel": "public",
-        "save": false,
-        "coverUrl": null,
-        "coverSize": null
+        "meetingDTO": {
+            "id": 2,
+            "streamId": null,
+            "type": 0,
+            "content": "测试",
+            "uid": 10024,
+            "verifyCode": "123456",
+            "mayStartTime": 1617352740000,
+            "orgId": null,
+            "userLimit": 30,
+            "startTime": 1617351450940,
+            "endTime": 1617352500098,
+            "deleted": false,
+            "addTime": 1617345589809,
+            "subscribeCount": 0,
+            "notifyStatus": 0,
+            "playUrl": null,
+            "timeLen": null,
+            "tags": null,
+            "userBrief": [
+                {
+                    "uid": 10024,
+                    "role": 1
+                }
+            ],
+            "status": -1,
+            "privacyLevel": "private",
+            "save": false,
+            "coverUrl": null,
+            "coverSize": null
+        },
+        "userBrief": {
+            "uid": 10024,
+            "fansCount": 4,
+            "followCount": 1,
+            "meetingCount": 0,
+            "joinMeetingCount": 0,
+            "curiousCount": 0,
+            "addTime": 1617799692605
+        },
+        "relatedList": []
     }
 }
 
