@@ -128,6 +128,7 @@ __meeting参数__
 | coverSize   | 否 | string  | 封面尺寸 `x*y` |   |
 | spearkerArray   | 是 | int[]  |  主播 |   |
 | tags   | 否 | json  |   标签 |  |
+| relatedList   | 否 | json[]  |   相关 |  |
 
 __tags参数__
 
@@ -136,6 +137,16 @@ __tags参数__
 | type   | 是 | int  |  标签类型 |  1 学科 2 细分领域 3 其他    |
 | tagId   | 是 | int  |   标签ID |  |
 | value   | 是 | string  |   标签值 |  |
+
+
+__relatedList参数__
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| name   | 是 | string  |  字段名称 |     |
+| value   | 是 | string  |   字段值 |  |
+| type   | 是 | int  | 类型  | 1 相关论文 2相关技术  3相关人物 4 相关院校  |
+| targetId   | 否 | int  | 关联ID  |  |
 
 
 
