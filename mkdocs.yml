@@ -23,4 +23,5 @@ nav:
     - 标签管理: './admin/admin_tag.md'  
     - 论文管理: './admin/admin_article.md'  
     - 会议管理: './admin/admin_meeting.md'  
+    - 用户配置管理: './admin/admin_profile.md'  
   
