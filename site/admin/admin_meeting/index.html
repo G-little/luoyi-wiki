@@ -237,7 +237,15 @@
 <li><a href="#_38">发消息</a><ul>
 <li><a href="#_39">请求说明</a></li>
 <li><a href="#_40">输入参数</a></li>
-<li><a href="#_41">返回实例</a></li>
+<li><a href="#_41">请求实例</a></li>
+<li><a href="#_42">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_43">删除消息</a><ul>
+<li><a href="#_44">请求说明</a></li>
+<li><a href="#_45">输入参数</a></li>
+<li><a href="#_46">请求实例</a></li>
+<li><a href="#_47">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -1206,13 +1214,79 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_41">返回实例</h5>
+<h5 id="_41">请求实例</h5>
+<pre><code>
+{
+    &quot;meetingId&quot;:123,
+    &quot;msg&quot;:&quot;haha&quot;
+}
+
+</code></pre>
+
+<h5 id="_42">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
         &quot;id&quot;:12345 //消息ID
+    }
+}
+
+</code></pre>
+
+<h4 id="_43">删除消息</h4>
+<h5 id="_44">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/meeting/del_msg</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_45">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">msgId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">消息ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_46">请求实例</h5>
+<pre><code>
+{
+    &quot;msgId&quot;:123
+}
+
+</code></pre>
+
+<h5 id="_47">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+      
     }
 }
 
