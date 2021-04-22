@@ -418,3 +418,64 @@ __tags参数__
 
 ```
 
+
+
+
+#### 1.4 关注列表
+
+##### 接口说明
+
+关注列表
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/admin/user/fans_list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| uid      | 否| int  |  用户ID |    |
+| type      | 否| int  |  类型 |  0:关注我的 1:我关注的   |
+| page      | 否| int  |  类型 |  分页   |
+| limit      | 否| int  |  条数 |  分页条数    |
+
+
+#####  错误说明
+
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+            {
+                "uid": 10004,
+                "avatar": "60630D0BE80D0130387482C4",
+                "name": "这样",
+                "workplace": "德国HZDR研究中心",
+                "jobTitle": null,
+                "fansCount": 1,
+                "followCount": 0,
+                "followStatus": 0
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+```
