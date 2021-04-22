@@ -102,6 +102,81 @@
 
 
 
+####  参加的会议列表接口
+
+##### 请求说明
+
+| http 请求方式          | get |
+|:------------- |:---------------:|
+| url      |/admin/meeting/join_list |
+
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| uid   | 否 | int  |  用户ID |   |
+| page   | 否 | int  |  分页 |  |
+| limit   | 否 | int  |  单页条数 |  |
+
+
+
+
+#####  返回实例
+
+```
+
+ {
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 1,
+        "total": 142,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 331,
+                "streamId": null,
+                "type": 0,
+                "content": "迷不知返",
+                "uid": 10024,
+                "verifyCode": null,
+                "mayStartTime": null,
+                "orgId": null,
+                "userLimit": 30,
+                "startTime": 1618212405928,
+                "endTime": 1618212670498,
+                "deleted": false,
+                "addTime": 1618212404267,
+                "subscribeCount": 0,
+                "notifyStatus": 0,
+                "playUrl": null,
+                "timeLen": null,
+                "tags": null,
+                "userBrief": [
+                    {
+                        "uid": 10024,
+                        "role": 1
+                    }
+                ],
+                "status": -1,
+                "privacyLevel": "public",
+                "save": false,
+                "coverUrl": null,
+                "coverSize": null
+            }
+        ],
+        "end": false,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": 142
+    }
+}
+
+```
+
+
+
 ####  创建接口
 
 ##### 请求说明
