@@ -9,143 +9,156 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>用户管理 - 络绎直播</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
-                <a class="navbar-brand" href="../..">络绎直播</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">络绎直播</a>
+                </div>
 
                 <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">首页 <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">首页 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="../.." class="dropdown-item">Main</a>
+<li >
+    <a href="../..">Main</a>
 </li>
                                     
-<li>
-    <a href="../../luoyi/topic/" class="dropdown-item">话题</a>
+<li >
+    <a href="../../luoyi/topic/">话题</a>
 </li>
                                     
-<li>
-    <a href="../../luoyi/search/" class="dropdown-item">搜索</a>
+<li >
+    <a href="../../luoyi/search/">搜索</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="../../user/user/" class="dropdown-item">Main</a>
+<li >
+    <a href="../../user/user/">Main</a>
 </li>
                                     
-<li>
-    <a href="../../luoyi/profile/" class="dropdown-item">Profile</a>
+<li >
+    <a href="../../luoyi/profile/">Profile</a>
 </li>
                                     
-<li>
-    <a href="../../luoyi/user/" class="dropdown-item">个人主页</a>
+<li >
+    <a href="../../luoyi/user/">个人主页</a>
 </li>
                                     
-<li>
-    <a href="../../luoyi/fans/" class="dropdown-item">关注/好友</a>
+<li >
+    <a href="../../luoyi/fans/">关注/好友</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">直播 <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">直播 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="../../luoyi/meeting/" class="dropdown-item">Main</a>
+<li >
+    <a href="../../luoyi/meeting/">Main</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">论文 <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">论文 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="../../luoyi/article/" class="dropdown-item">Main</a>
+<li >
+    <a href="../../luoyi/article/">Main</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">通知 <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">通知 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="../../luoyi/im/" class="dropdown-item">Main</a>
+<li >
+    <a href="../../luoyi/im/">Main</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="../admin/" class="dropdown-item">Main</a>
+<li >
+    <a href="../admin/">Main</a>
 </li>
                                     
-<li>
-    <a href="../admin_sys/" class="dropdown-item">系统管理</a>
+<li >
+    <a href="../admin_sys/">系统管理</a>
 </li>
                                     
-<li>
-    <a href="./" class="dropdown-item active">用户管理</a>
+<li class="active">
+    <a href="./">用户管理</a>
 </li>
                                     
-<li>
-    <a href="../admin_tag/" class="dropdown-item">标签管理</a>
+<li >
+    <a href="../admin_tag/">标签管理</a>
 </li>
                                     
-<li>
-    <a href="../admin_article/" class="dropdown-item">论文管理</a>
+<li >
+    <a href="../admin_article/">论文管理</a>
 </li>
                                     
-<li>
-    <a href="../admin_meeting/" class="dropdown-item">会议管理</a>
+<li >
+    <a href="../admin_meeting/">会议管理</a>
 </li>
                                     
-<li>
-    <a href="../admin_profile/" class="dropdown-item">用户配置管理</a>
+<li >
+    <a href="../admin_profile/">用户配置管理</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../admin_sys/" class="nav-link">
+                            <li >
+                                <a rel="next" href="../admin_sys/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../admin_tag/" class="nav-link">
+                            <li >
+                                <a rel="prev" href="../admin_tag/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -155,46 +168,17 @@
         </div>
 
         <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">用户管理</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">背景</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">产品说明</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">关键流程说明</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口说明</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">用户管理</a></li>
+            <li><a href="#_2">修订记录</a></li>
+            <li><a href="#_3">背景</a></li>
+            <li><a href="#_4">产品说明</a></li>
+            <li><a href="#_5">关键流程说明</a></li>
+            <li><a href="#_6">接口说明</a></li>
+    </ul>
 </div></div>
-                    <div class="col-md-9" role="main">
+                <div class="col-md-9" role="main">
 
 <h1 id="_1">用户管理</h1>
 <div class="toc">
@@ -236,6 +220,14 @@
 <li><a href="#_27">输入参数</a></li>
 <li><a href="#_28">请求实例</a></li>
 <li><a href="#_29">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#14">1.4 关注列表</a><ul>
+<li><a href="#_30">接口说明</a></li>
+<li><a href="#_31">请求说明</a></li>
+<li><a href="#_32">输入参数</a></li>
+<li><a href="#_33">错误说明</a></li>
+<li><a href="#_34">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -948,8 +940,98 @@
     }
 }
 
+</code></pre>
+
+<h4 id="14">1.4 关注列表</h4>
+<h5 id="_30">接口说明</h5>
+<p>关注列表</p>
+<h5 id="_31">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/user/fans_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_32">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">uid</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">类型</td>
+<td align="left">0:关注我的 1:我关注的</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">类型</td>
+<td align="left">分页</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">条数</td>
+<td align="left">分页条数</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_33">错误说明</h5>
+<h5 id="_34">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: null,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;uid&quot;: 10004,
+                &quot;avatar&quot;: &quot;60630D0BE80D0130387482C4&quot;,
+                &quot;name&quot;: &quot;这样&quot;,
+                &quot;workplace&quot;: &quot;德国HZDR研究中心&quot;,
+                &quot;jobTitle&quot;: null,
+                &quot;fansCount&quot;: 1,
+                &quot;followCount&quot;: 0,
+                &quot;followStatus&quot;: 0
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
 </code></pre></div>
-            </div>
         </div>
 
         <footer class="col-md-12">
@@ -958,26 +1040,26 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form>
+                <form role="form">
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -986,12 +1068,12 @@
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
