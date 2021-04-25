@@ -252,7 +252,7 @@
 | mobile   | 是 | string  |  手机号 ||
 | password   | 是 | string  |  密码 ||
 | status   | 是 | int  |  状态 | 1  正常 -1 禁止登陆 |
-| roleId   | 是 | int  |  角色ID |  |
+| roleIds   | 是 | int[]  |  角色ID |  |
 | email   | 否 | string  |  邮箱地址 |  |
 
 	
@@ -293,7 +293,7 @@
 | mobile   | 是 | string  |  手机号 ||
 | password   | 是 | string  |  密码 ||
 | status   | 是 | int  |  状态 | 1  正常 -1 禁止登陆 |
-| roleId   | 是 | int  |  角色ID |  |
+| roleIds   | 是 | int[]  |  角色ID |  |
 | email   | 否 | string  |  邮箱地址 |  |
 
 	
