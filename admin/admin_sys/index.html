@@ -223,52 +223,58 @@
 <li><a href="#_30">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_31">添加角色</a><ul>
+<li><a href="#_31">更新管理员</a><ul>
 <li><a href="#_32">请求说明</a></li>
 <li><a href="#_33">输入参数</a></li>
 <li><a href="#_34">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_35">分页拉取角色列表</a><ul>
+<li><a href="#_35">添加角色</a><ul>
 <li><a href="#_36">请求说明</a></li>
 <li><a href="#_37">输入参数</a></li>
 <li><a href="#_38">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_39">获取角色详情</a><ul>
+<li><a href="#_39">分页拉取角色列表</a><ul>
 <li><a href="#_40">请求说明</a></li>
 <li><a href="#_41">输入参数</a></li>
 <li><a href="#_42">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_43">删除角色</a><ul>
+<li><a href="#_43">获取角色详情</a><ul>
 <li><a href="#_44">请求说明</a></li>
 <li><a href="#_45">输入参数</a></li>
 <li><a href="#_46">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_47">资源列表</a><ul>
+<li><a href="#_47">删除角色</a><ul>
 <li><a href="#_48">请求说明</a></li>
 <li><a href="#_49">输入参数</a></li>
 <li><a href="#_50">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_51">添加资源</a><ul>
+<li><a href="#_51">资源列表</a><ul>
 <li><a href="#_52">请求说明</a></li>
 <li><a href="#_53">输入参数</a></li>
 <li><a href="#_54">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_55">获取资源详情</a><ul>
+<li><a href="#_55">添加资源</a><ul>
 <li><a href="#_56">请求说明</a></li>
 <li><a href="#_57">输入参数</a></li>
 <li><a href="#_58">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_59">删除资源</a><ul>
+<li><a href="#_59">获取资源详情</a><ul>
 <li><a href="#_60">请求说明</a></li>
 <li><a href="#_61">输入参数</a></li>
 <li><a href="#_62">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_63">删除资源</a><ul>
+<li><a href="#_64">请求说明</a></li>
+<li><a href="#_65">输入参数</a></li>
+<li><a href="#_66">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -609,6 +615,98 @@
 </thead>
 <tbody>
 <tr>
+<td align="left">username</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">姓名</td>
+<td align="left">真实姓名</td>
+</tr>
+<tr>
+<td align="left">gender</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">性别</td>
+<td align="left">-1 女  1 男 0 未知</td>
+</tr>
+<tr>
+<td align="left">mobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">password</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">密码</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">status</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">状态</td>
+<td align="left">1  正常 -1 禁止登陆</td>
+</tr>
+<tr>
+<td align="left">roleId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">角色ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">email</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">邮箱地址</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_30">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+     }
+}
+
+
+</code></pre>
+
+<h4 id="_31">更新管理员</h4>
+<h5 id="_32">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post   json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/admin/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_33">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td align="left">id</td>
 <td align="center">否</td>
 <td align="left">int</td>
@@ -657,9 +755,16 @@
 <td align="left">角色ID</td>
 <td align="left"></td>
 </tr>
+<tr>
+<td align="left">email</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">邮箱地址</td>
+<td align="left"></td>
+</tr>
 </tbody>
 </table>
-<h5 id="_30">返回实例</h5>
+<h5 id="_34">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
@@ -672,8 +777,8 @@
 
 </code></pre>
 
-<h4 id="_31">添加角色</h4>
-<h5 id="_32">请求说明</h5>
+<h4 id="_35">添加角色</h4>
+<h5 id="_36">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -688,7 +793,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_33">输入参数</h5>
+<h5 id="_37">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -723,7 +828,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_34">返回实例</h5>
+<h5 id="_38">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
@@ -736,8 +841,8 @@
 
 </code></pre>
 
-<h4 id="_35">分页拉取角色列表</h4>
-<h5 id="_36">请求说明</h5>
+<h4 id="_39">分页拉取角色列表</h4>
+<h5 id="_40">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -752,7 +857,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_37">输入参数</h5>
+<h5 id="_41">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -780,7 +885,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_38">返回实例</h5>
+<h5 id="_42">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
@@ -814,62 +919,7 @@
 
 </code></pre>
 
-<h4 id="_39">获取角色详情</h4>
-<h5 id="_40">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/role/read</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_41">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">角色ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_42">返回实例</h5>
-<pre><code>
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;id&quot;: 2,
-        &quot;name&quot;: &quot;测试&quot;, //角色名称
-        &quot;privilege&quot;: [ //角色权限
-            7
-        ],
-        &quot;createTime&quot;: null
-    }
-}
-
-
-</code></pre>
-
-<h4 id="_43">删除角色</h4>
+<h4 id="_43">获取角色详情</h4>
 <h5 id="_44">请求说明</h5>
 <table>
 <thead>
@@ -881,7 +931,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/role/del</td>
+<td align="center">/admin/role/read</td>
 </tr>
 </tbody>
 </table>
@@ -912,6 +962,61 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;测试&quot;, //角色名称
+        &quot;privilege&quot;: [ //角色权限
+            7
+        ],
+        &quot;createTime&quot;: null
+    }
+}
+
+
+</code></pre>
+
+<h4 id="_47">删除角色</h4>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/role/del</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">角色ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
 
     }
 }
@@ -919,8 +1024,8 @@
 
 </code></pre>
 
-<h4 id="_47">资源列表</h4>
-<h5 id="_48">请求说明</h5>
+<h4 id="_51">资源列表</h4>
+<h5 id="_52">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -935,7 +1040,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_49">输入参数</h5>
+<h5 id="_53">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -963,7 +1068,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_50">返回实例</h5>
+<h5 id="_54">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
@@ -1001,8 +1106,8 @@
 
 </code></pre>
 
-<h4 id="_51">添加资源</h4>
-<h5 id="_52">请求说明</h5>
+<h4 id="_55">添加资源</h4>
+<h5 id="_56">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -1017,7 +1122,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_53">输入参数</h5>
+<h5 id="_57">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -1073,82 +1178,23 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_54">返回实例</h5>
-<pre><code>
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-
-
-
-    }
-
-}
-
-
-</code></pre>
-
-<h4 id="_55">获取资源详情</h4>
-<h5 id="_56">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/resources/get</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_57">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">权限ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
 <h5 id="_58">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;id&quot;: 38, //id
-        &quot;title&quot;: &quot;删除角色&quot;,  //标题
-        &quot;path&quot;: &quot;/role/del&quot;,// url
-        &quot;parentId&quot;: 29, //父节点ID
-        &quot;type&quot;: 0, // 类型 0 普通
-        &quot;isMenu&quot;: 0, //是否菜单项  0 否 1 是
-        &quot;createTime&quot;: 1577196434017, //创建时间
-        &quot;privilegePos&quot;: 0, //权限位  非手填值
-        &quot;privilegeVal&quot;: 512, //权限值 非手填值
-        &quot;needAuth&quot;: 1 //是否需要权限校验  0 否 1 是
+
+
+
     }
+
 }
 
 
 </code></pre>
 
-<h4 id="_59">删除资源</h4>
+<h4 id="_59">获取资源详情</h4>
 <h5 id="_60">请求说明</h5>
 <table>
 <thead>
@@ -1160,7 +1206,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/resources/del</td>
+<td align="center">/admin/resources/get</td>
 </tr>
 </tbody>
 </table>
@@ -1186,6 +1232,65 @@
 </tbody>
 </table>
 <h5 id="_62">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 38, //id
+        &quot;title&quot;: &quot;删除角色&quot;,  //标题
+        &quot;path&quot;: &quot;/role/del&quot;,// url
+        &quot;parentId&quot;: 29, //父节点ID
+        &quot;type&quot;: 0, // 类型 0 普通
+        &quot;isMenu&quot;: 0, //是否菜单项  0 否 1 是
+        &quot;createTime&quot;: 1577196434017, //创建时间
+        &quot;privilegePos&quot;: 0, //权限位  非手填值
+        &quot;privilegeVal&quot;: 512, //权限值 非手填值
+        &quot;needAuth&quot;: 1 //是否需要权限校验  0 否 1 是
+    }
+}
+
+
+</code></pre>
+
+<h4 id="_63">删除资源</h4>
+<h5 id="_64">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/resources/del</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_65">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">权限ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_66">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
