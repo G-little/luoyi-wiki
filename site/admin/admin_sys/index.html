@@ -9,156 +9,143 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>系统管理 - 络绎直播</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">络绎直播</a>
-                </div>
+                <a class="navbar-brand" href="../..">络绎直播</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">首页 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">首页 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../..">Main</a>
+<li>
+    <a href="../.." class="dropdown-item">Main</a>
 </li>
                                     
-<li >
-    <a href="../../luoyi/topic/">话题</a>
+<li>
+    <a href="../../luoyi/topic/" class="dropdown-item">话题</a>
 </li>
                                     
-<li >
-    <a href="../../luoyi/search/">搜索</a>
+<li>
+    <a href="../../luoyi/search/" class="dropdown-item">搜索</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../user/user/">Main</a>
+<li>
+    <a href="../../user/user/" class="dropdown-item">Main</a>
 </li>
                                     
-<li >
-    <a href="../../luoyi/profile/">Profile</a>
+<li>
+    <a href="../../luoyi/profile/" class="dropdown-item">Profile</a>
 </li>
                                     
-<li >
-    <a href="../../luoyi/user/">个人主页</a>
+<li>
+    <a href="../../luoyi/user/" class="dropdown-item">个人主页</a>
 </li>
                                     
-<li >
-    <a href="../../luoyi/fans/">关注/好友</a>
+<li>
+    <a href="../../luoyi/fans/" class="dropdown-item">关注/好友</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">直播 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">直播 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../luoyi/meeting/">Main</a>
+<li>
+    <a href="../../luoyi/meeting/" class="dropdown-item">Main</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">论文 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">论文 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../luoyi/article/">Main</a>
+<li>
+    <a href="../../luoyi/article/" class="dropdown-item">Main</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">通知 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">通知 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../luoyi/im/">Main</a>
+<li>
+    <a href="../../luoyi/im/" class="dropdown-item">Main</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../admin/">Main</a>
+<li>
+    <a href="../admin/" class="dropdown-item">Main</a>
 </li>
                                     
-<li class="active">
-    <a href="./">系统管理</a>
+<li>
+    <a href="./" class="dropdown-item active">系统管理</a>
 </li>
                                     
-<li >
-    <a href="../admin_user/">用户管理</a>
+<li>
+    <a href="../admin_user/" class="dropdown-item">用户管理</a>
 </li>
                                     
-<li >
-    <a href="../admin_tag/">标签管理</a>
+<li>
+    <a href="../admin_tag/" class="dropdown-item">标签管理</a>
 </li>
                                     
-<li >
-    <a href="../admin_article/">论文管理</a>
+<li>
+    <a href="../admin_article/" class="dropdown-item">论文管理</a>
 </li>
                                     
-<li >
-    <a href="../admin_meeting/">会议管理</a>
+<li>
+    <a href="../admin_meeting/" class="dropdown-item">会议管理</a>
 </li>
                                     
-<li >
-    <a href="../admin_profile/">用户配置管理</a>
+<li>
+    <a href="../admin_profile/" class="dropdown-item">用户配置管理</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../admin/">
+                            <li class="nav-item">
+                                <a rel="prev" href="../admin/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../admin_user/">
+                            <li class="nav-item">
+                                <a rel="next" href="../admin_user/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -168,17 +155,46 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#_1">管理后台</a></li>
-            <li><a href="#_2">修订记录</a></li>
-            <li><a href="#_3">背景</a></li>
-            <li><a href="#_4">产品说明</a></li>
-            <li><a href="#_5">关键流程说明</a></li>
-            <li><a href="#_6">接口说明</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">管理后台</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">背景</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">产品说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">关键流程说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="_1">管理后台</h1>
 <div class="toc">
@@ -229,46 +245,52 @@
 <li><a href="#_34">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_35">分页拉取角色列表</a><ul>
+<li><a href="#_35">角色权限</a><ul>
 <li><a href="#_36">请求说明</a></li>
 <li><a href="#_37">输入参数</a></li>
 <li><a href="#_38">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_39">获取角色详情</a><ul>
+<li><a href="#_39">分页拉取角色列表</a><ul>
 <li><a href="#_40">请求说明</a></li>
 <li><a href="#_41">输入参数</a></li>
 <li><a href="#_42">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_43">删除角色</a><ul>
+<li><a href="#_43">获取角色详情</a><ul>
 <li><a href="#_44">请求说明</a></li>
 <li><a href="#_45">输入参数</a></li>
 <li><a href="#_46">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_47">资源列表</a><ul>
+<li><a href="#_47">删除角色</a><ul>
 <li><a href="#_48">请求说明</a></li>
 <li><a href="#_49">输入参数</a></li>
 <li><a href="#_50">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_51">添加资源</a><ul>
+<li><a href="#_51">资源列表</a><ul>
 <li><a href="#_52">请求说明</a></li>
 <li><a href="#_53">输入参数</a></li>
 <li><a href="#_54">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_55">获取资源详情</a><ul>
+<li><a href="#_55">添加资源</a><ul>
 <li><a href="#_56">请求说明</a></li>
 <li><a href="#_57">输入参数</a></li>
 <li><a href="#_58">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_59">删除资源</a><ul>
+<li><a href="#_59">获取资源详情</a><ul>
 <li><a href="#_60">请求说明</a></li>
 <li><a href="#_61">输入参数</a></li>
 <li><a href="#_62">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_63">删除资源</a><ul>
+<li><a href="#_64">请求说明</a></li>
+<li><a href="#_65">输入参数</a></li>
+<li><a href="#_66">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -736,8 +758,67 @@
 
 </code></pre>
 
-<h4 id="_35">分页拉取角色列表</h4>
+<h4 id="_35">角色权限</h4>
 <h5 id="_36">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/role/permissions</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_37">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">roleId</td>
+<td align="center">是</td>
+<td align="left">角色ID</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_38">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;systemPermissions&quot;: [ //权限列表
+            {
+                &quot;id&quot;: 1, //权限ID
+                &quot;label&quot;: &quot;系统管理:管理员管理:编辑&quot;, //标签
+                &quot;api&quot;: &quot;POST /admin/update&quot;, 
+                &quot;children&quot;: null //子菜单
+            }
+        ],
+        &quot;assignedPermissions&quot;: [
+            1,2,3,4
+        ]  //分配的权限ID
+    }
+}
+
+</code></pre>
+
+<h4 id="_39">分页拉取角色列表</h4>
+<h5 id="_40">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -752,7 +833,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_37">输入参数</h5>
+<h5 id="_41">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -780,7 +861,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_38">返回实例</h5>
+<h5 id="_42">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
@@ -814,62 +895,7 @@
 
 </code></pre>
 
-<h4 id="_39">获取角色详情</h4>
-<h5 id="_40">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/role/read</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_41">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">角色ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_42">返回实例</h5>
-<pre><code>
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;id&quot;: 2,
-        &quot;name&quot;: &quot;测试&quot;, //角色名称
-        &quot;privilege&quot;: [ //角色权限
-            7
-        ],
-        &quot;createTime&quot;: null
-    }
-}
-
-
-</code></pre>
-
-<h4 id="_43">删除角色</h4>
+<h4 id="_43">获取角色详情</h4>
 <h5 id="_44">请求说明</h5>
 <table>
 <thead>
@@ -881,7 +907,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/role/del</td>
+<td align="center">/admin/role/read</td>
 </tr>
 </tbody>
 </table>
@@ -912,6 +938,61 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;测试&quot;, //角色名称
+        &quot;privilege&quot;: [ //角色权限
+            7
+        ],
+        &quot;createTime&quot;: null
+    }
+}
+
+
+</code></pre>
+
+<h4 id="_47">删除角色</h4>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/role/del</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">角色ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
 
     }
 }
@@ -919,8 +1000,8 @@
 
 </code></pre>
 
-<h4 id="_47">资源列表</h4>
-<h5 id="_48">请求说明</h5>
+<h4 id="_51">资源列表</h4>
+<h5 id="_52">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -935,7 +1016,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_49">输入参数</h5>
+<h5 id="_53">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -963,7 +1044,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_50">返回实例</h5>
+<h5 id="_54">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
@@ -1001,8 +1082,8 @@
 
 </code></pre>
 
-<h4 id="_51">添加资源</h4>
-<h5 id="_52">请求说明</h5>
+<h4 id="_55">添加资源</h4>
+<h5 id="_56">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -1017,7 +1098,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_53">输入参数</h5>
+<h5 id="_57">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -1073,82 +1154,23 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_54">返回实例</h5>
-<pre><code>
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-
-
-
-    }
-
-}
-
-
-</code></pre>
-
-<h4 id="_55">获取资源详情</h4>
-<h5 id="_56">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/resources/get</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_57">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">权限ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
 <h5 id="_58">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;id&quot;: 38, //id
-        &quot;title&quot;: &quot;删除角色&quot;,  //标题
-        &quot;path&quot;: &quot;/role/del&quot;,// url
-        &quot;parentId&quot;: 29, //父节点ID
-        &quot;type&quot;: 0, // 类型 0 普通
-        &quot;isMenu&quot;: 0, //是否菜单项  0 否 1 是
-        &quot;createTime&quot;: 1577196434017, //创建时间
-        &quot;privilegePos&quot;: 0, //权限位  非手填值
-        &quot;privilegeVal&quot;: 512, //权限值 非手填值
-        &quot;needAuth&quot;: 1 //是否需要权限校验  0 否 1 是
+
+
+
     }
+
 }
 
 
 </code></pre>
 
-<h4 id="_59">删除资源</h4>
+<h4 id="_59">获取资源详情</h4>
 <h5 id="_60">请求说明</h5>
 <table>
 <thead>
@@ -1160,7 +1182,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/resources/del</td>
+<td align="center">/admin/resources/get</td>
 </tr>
 </tbody>
 </table>
@@ -1191,12 +1213,72 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
+        &quot;id&quot;: 38, //id
+        &quot;title&quot;: &quot;删除角色&quot;,  //标题
+        &quot;path&quot;: &quot;/role/del&quot;,// url
+        &quot;parentId&quot;: 29, //父节点ID
+        &quot;type&quot;: 0, // 类型 0 普通
+        &quot;isMenu&quot;: 0, //是否菜单项  0 否 1 是
+        &quot;createTime&quot;: 1577196434017, //创建时间
+        &quot;privilegePos&quot;: 0, //权限位  非手填值
+        &quot;privilegeVal&quot;: 512, //权限值 非手填值
+        &quot;needAuth&quot;: 1 //是否需要权限校验  0 否 1 是
+    }
+}
+
+
+</code></pre>
+
+<h4 id="_63">删除资源</h4>
+<h5 id="_64">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/resources/del</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_65">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">权限ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_66">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
 
     }
 }
 
 
 </code></pre></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -1205,26 +1287,26 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -1233,12 +1315,12 @@
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
