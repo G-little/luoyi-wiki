@@ -121,34 +121,34 @@
     "c": 0,
     "m": null,
     "d": {
-        "id": 1,
-        "subjects": "3",
-        "doi": "https://doi.org/10.1101/2020.09.08.287011",
-        "postDate": 1599580800,
-        "pdfUrl": "https://www.biorxiv.org/content/10.1101/2020.09.08.287011v1.full.pdf",
-        "externalId": "10.1101/2020.09.08.287011v1",
-        "isNormal": 1,
-        "createTime": 1608889848,
-        "updateTime": null,
-        "source": "biorxiv",
-        "isAuthentication": true,
-        "status": true,
-        "banReason": null,
-        "contactAuthor": null,
-        "contactAddress": null,
-        "contactEmail": null,
-        "scholarId": null,
-        "adminId": null,
-        "operateIp": null,
-        "showId": "ac73740a2654b8ffc1c090fca04b6d86",
-        "title": "<h1 class=\"highwire-cite-title\" id=\"page-title\">Leaf form diversification in an heirloom tomato results from alterations in two different <em>HOMEOBOX</em> genes</h1>",
-        "authors": "1,2,3,4,5,6,7",
+        "id": 1, //论文ID
+        "subjects": "3", //学科，多个用逗号隔开
+        "doi": "https://doi.org/10.1101/2020.09.08.287011",  //数字对象唯一标识符
+        "postDate": 1599580800, //发表时间
+        "pdfUrl": "https://www.biorxiv.org/content/10.1101/2020.09.08.287011v1.full.pdf", //
+        "externalId": "10.1101/2020.09.08.287011v1",//原网id
+        "isNormal": 1, //状态1为正常，2为异常
+        "createTime": 1608889848, //创建时间
+        "updateTime": null, //更新时间
+        "source": "biorxiv", //来源
+        "isAuthentication": true,//是否验证，默认2没验证，1为验证,3为验证失败
+        "status": true, //状态，人为正常，2为禁用
+        "banReason": null, //禁用理由
+        "contactAuthor": null, //联系作者
+        "contactAddress": null, //联系地址
+        "contactEmail": null, //联系邮箱
+        "scholarId": null, //学者ID
+        "adminId": null, //管理员ID
+        "operateIp": null, //IP
+        "showId": "ac73740a2654b8ffc1c090fca04b6d86", //对外ID，title+subjects_number+abstract字段md5，不可改
+        "title": "<h1 class=\"highwire-cite-title\" id=\"page-title\">Leaf form diversification in an heirloom tomato results from alterations in two different <em>HOMEOBOX</em> genes</h1>", //文章标题
+        "authors": "1,2,3,4,5,6,7",  //作者，多个用逗号隔开
         "subjectsNumber": null,
-        "keys": null,
-        "brief": "<div class=\"section abstract\" id=\"abstract-1\"><p id=\"p-4\">Domesticated plants and animals display tremendous diversity in various phenotypic traits and often this diversity is seen within the same species. Tomato (<em>Solanum lycopersicum</em>; Solanaceae) cultivars show wide variation in leaf morphology, but the influence of breeding efforts in sculpting this diversity is not known. Here, we demonstrate that a single nucleotide deletion in the homeobox motif of <em>BIPINNATA</em>, which is a <em>BEL-LIKE HOMEODOMAIN</em> gene, led to a highly complex leaf phenotype in an heirloom tomato, Silvery Fir Tree (SiFT). Additionally, a comparative gene network analysis revealed that reduced expression of the ortholog of <em>WUSCHEL RELATED HOMEOBOX 1</em> is also important for the narrow leaflet phenotype seen in SiFT. Phylogenetic and comparative genome analysis using whole-genome sequencing data suggests that the <em>bip</em> mutation in SiFT is likely a <em>de novo</em> mutation, instead of standing genetic variation. These results provide new insights into natural variation in phenotypic traits introduced into crops during improvement processes after domestication.</p></div>",
+        "keys": null, //关键词
+        "brief": "<div class=\"section abstract\" id=\"abstract-1\"><p id=\"p-4\">Domesticated plants and animals display tremendous diversity in various phenotypic traits and often this diversity is seen within the same species. Tomato (<em>Solanum lycopersicum</em>; Solanaceae) cultivars show wide variation in leaf morphology, but the influence of breeding efforts in sculpting this diversity is not known. Here, we demonstrate that a single nucleotide deletion in the homeobox motif of <em>BIPINNATA</em>, which is a <em>BEL-LIKE HOMEODOMAIN</em> gene, led to a highly complex leaf phenotype in an heirloom tomato, Silvery Fir Tree (SiFT). Additionally, a comparative gene network analysis revealed that reduced expression of the ortholog of <em>WUSCHEL RELATED HOMEOBOX 1</em> is also important for the narrow leaflet phenotype seen in SiFT. Phylogenetic and comparative genome analysis using whole-genome sequencing data suggests that the <em>bip</em> mutation in SiFT is likely a <em>de novo</em> mutation, instead of standing genetic variation. These results provide new insights into natural variation in phenotypic traits introduced into crops during improvement processes after domestication.</p></div>", //简介
         "url": "https://www.biorxiv.org/content/10.1101/2020.09.08.287011v1",
-        "visitorCount": 7,
-        "curiousCount": 4,
+        "visitorCount": 7, //访问人数
+        "curiousCount": 4, //好奇人数
         "tags": [
             {
                 "type": 2,

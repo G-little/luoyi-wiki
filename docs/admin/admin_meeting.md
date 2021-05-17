@@ -60,35 +60,35 @@
         "currentPage": 1,
         "list": [
             {
-                "id": 331,
-                "streamId": null,
-                "type": 0,
-                "content": "迷不知返",
-                "uid": 10024,
-                "verifyCode": null,
-                "mayStartTime": null,
-                "orgId": null,
-                "userLimit": 30,
-                "startTime": 1618212405928,
-                "endTime": 1618212670498,
-                "deleted": false,
-                "addTime": 1618212404267,
-                "subscribeCount": 0,
-                "notifyStatus": 0,
-                "playUrl": null,
-                "timeLen": null,
-                "tags": null,
-                "userBrief": [
+                "id": 331, //会议ID
+                "streamId": null, 
+                "type": 0, // 类型 0 音频 1 视频
+                "content": "迷不知返",  //会议标题
+                "uid": 10024, //创建人ID
+                "verifyCode": null, //密码
+                "mayStartTime": null, //预约时间
+                "orgId": null, 
+                "userLimit": 30, //最大人数
+                "startTime": 1618212405928, //开始时间
+                "endTime": 1618212670498, //截止时间
+                "deleted": false,  //是否删除
+                "addTime": 1618212404267, //添加时间 
+                "subscribeCount": 0, //预约人数
+                "notifyStatus": 0, //通知状态 0 初始 1已通知
+                "playUrl": null, //回放地址
+                "timeLen": null, //时常
+                "tags": null, //标签
+                "userBrief": [ //参与人
                     {
-                        "uid": 10024,
-                        "role": 1
+                        "uid": 10024, //用户ID
+                        "role": 1 //用户角色   0 初始 1 主播 2 嘉宾
                     }
                 ],
-                "status": -1,
-                "privacyLevel": "public",
-                "save": false,
-                "coverUrl": null,
-                "coverSize": null
+                "status": -1, //会议状态  0 初始 -1 结束  1 直播中
+                "privacyLevel": "public", //是否私密  
+                "save": false, //是否保存回放
+                "coverUrl": null, //封面地址
+                "coverSize": null //封面尺寸
             }
         ],
         "end": false,
