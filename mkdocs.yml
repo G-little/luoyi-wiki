@@ -11,6 +11,8 @@ nav:
     - 关注/好友: './luoyi/fans.md'
   - 直播: 
     - Main: './luoyi/meeting.md'
+  - 科学家: 
+    - Main: './luoyi/scientist.md'
   - 论文: 
     - Main: './luoyi/article.md'
   - 通知: 

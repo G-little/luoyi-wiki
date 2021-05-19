@@ -346,6 +346,27 @@
 <li><a href="#_96">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#24">2.4 添加经历</a><ul>
+<li><a href="#_97">接口说明</a></li>
+<li><a href="#_98">请求说明</a></li>
+<li><a href="#_99">输入参数</a></li>
+<li><a href="#_100">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#25">2.5 修改经历</a><ul>
+<li><a href="#_101">接口说明</a></li>
+<li><a href="#_102">请求说明</a></li>
+<li><a href="#_103">输入参数</a></li>
+<li><a href="#_104">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#25_1">2.5 删除经历</a><ul>
+<li><a href="#_105">接口说明</a></li>
+<li><a href="#_106">请求说明</a></li>
+<li><a href="#_107">输入参数</a></li>
+<li><a href="#_108">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -950,6 +971,20 @@
 <td align="left">string</td>
 <td align="left">真实姓名</td>
 <td align="left"></td>
+</tr>
+<tr>
+<td align="left">worktype</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">工作类型 1 学校 2 企业</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">brief</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">简介</td>
+<td align="left">最多200字符</td>
 </tr>
 </tbody>
 </table>
@@ -1639,6 +1674,240 @@
 </table>
 <h5 id="_95">错误说明</h5>
 <h5 id="_96">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+</code></pre>
+
+<h4 id="24">2.4 添加经历</h4>
+<h5 id="_97">接口说明</h5>
+<p>添加用户经历</p>
+<h5 id="_98">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/user/career/add</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_99">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">startTime</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">开始时间</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">endTime</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">截止时间</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">类型</td>
+<td align="left">1 工作经历 2 教育经历</td>
+</tr>
+<tr>
+<td align="left">workplace</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">地点</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">jobTitle</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">头衔</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">#####  错误说明</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_100">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;:1
+    }
+}
+</code></pre>
+
+<h4 id="25">2.5 修改经历</h4>
+<h5 id="_101">接口说明</h5>
+<p>添加用户经历</p>
+<h5 id="_102">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">put</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/user/career/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_103">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">经历ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">startTime</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">开始时间</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">endTime</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">截止时间</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">类型</td>
+<td align="left">1 工作经历 2 教育经历</td>
+</tr>
+<tr>
+<td align="left">workplace</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">地点</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">jobTitle</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">头衔</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">#####  错误说明</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_104">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+</code></pre>
+
+<h4 id="25_1">2.5 删除经历</h4>
+<h5 id="_105">接口说明</h5>
+<p>添加用户经历</p>
+<h5 id="_106">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">delete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/user/career/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_107">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">经历ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">#####  错误说明</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_108">返回实例</h5>
 <pre><code class="json">
 {
     &quot;c&quot;: 0,
