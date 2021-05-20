@@ -962,6 +962,7 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 | type      | 否 | int  |  类型 |  1 工作经历 2 教育经历   |
 | workplace      | 否 | string  |  地点 |   |
 | jobTitle      | 否 | string  |  头衔 |   |
+| domain      | 否 | string  |  专业 |   |
 #####  错误说明
 
 
