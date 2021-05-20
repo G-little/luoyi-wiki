@@ -238,6 +238,14 @@
 <li><a href="#_21">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#14">1.4 用户个人主页</a><ul>
+<li><a href="#_22">接口说明</a></li>
+<li><a href="#_23">请求说明</a></li>
+<li><a href="#_24">输入参数</a></li>
+<li><a href="#_25">错误说明</a></li>
+<li><a href="#_26">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -546,6 +554,93 @@
         }
     ]
 }
+</code></pre>
+
+<h4 id="14">1.4 用户个人主页</h4>
+<h5 id="_22">接口说明</h5>
+<p>用户个人主页</p>
+<h5 id="_23">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/home/user_info</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_24">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">uid</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">用户ID</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_25">错误说明</h5>
+<h5 id="_26">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;uid&quot;: 10175,
+        &quot;avatar&quot;: &quot;0136fd66bf9ba616d354a6f15b0a18ce.png&quot;,
+        &quot;name&quot;: &quot;冷小纲&quot;,
+        &quot;workplace&quot;: &quot;都柏林大学&quot;,
+        &quot;jobTitle&quot;: null,
+        &quot;fansCount&quot;: 6,
+        &quot;followCount&quot;: 3,
+        &quot;meetingCount&quot;: 1,
+        &quot;joinMeetingCount&quot;: 0,
+        &quot;curiousCount&quot;: 3,
+        &quot;tags&quot;: [
+            {
+                &quot;type&quot;: 1,
+                &quot;tagId&quot;: 145,
+                &quot;value&quot;: &quot;医学&quot;
+            },
+            {
+                &quot;type&quot;: 2,
+                &quot;tagId&quot;: 196,
+                &quot;value&quot;: &quot;泌尿学&quot;
+            }
+        ],
+        &quot;followStatus&quot;: 0,
+        &quot;userType&quot;: null,
+        &quot;meetingId&quot;: null,
+        &quot;brief&quot;: null,
+        &quot;careerList&quot;: [ //经历列表
+            {
+                &quot;id&quot;: 1,
+                &quot;startTime&quot;: &quot;2020&quot;,
+                &quot;endTime&quot;: &quot;2021&quot;,
+                &quot;type&quot;: 1,
+                &quot;workplace&quot;: &quot;test&quot;,
+                &quot;jobTitle&quot;: &quot;test&quot;
+            }
+        ]
+    }
+}
+
 </code></pre></div>
             </div>
         </div>
