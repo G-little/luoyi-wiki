@@ -238,6 +238,81 @@
 
 
 
+#### 1.4 用户个人主页
+
+##### 接口说明
+
+用户个人主页
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/home/user_info |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| uid      | 是 | int  |   |    用户ID |
+
+
+#####  错误说明
+
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "uid": 10175,
+        "avatar": "0136fd66bf9ba616d354a6f15b0a18ce.png",
+        "name": "冷小纲",
+        "workplace": "都柏林大学",
+        "jobTitle": null,
+        "fansCount": 6,
+        "followCount": 3,
+        "meetingCount": 1,
+        "joinMeetingCount": 0,
+        "curiousCount": 3,
+        "tags": [
+            {
+                "type": 1,
+                "tagId": 145,
+                "value": "医学"
+            },
+            {
+                "type": 2,
+                "tagId": 196,
+                "value": "泌尿学"
+            }
+        ],
+        "followStatus": 0,
+        "userType": null,
+        "meetingId": null,
+        "brief": null,
+        "careerList": [ //经历列表
+            {
+                "id": 1,
+                "startTime": "2020",
+                "endTime": "2021",
+                "type": 1,
+                "workplace": "test",
+                "jobTitle": "test"
+            }
+        ]
+    }
+}
+
+```
+
+
+
 
 
 
