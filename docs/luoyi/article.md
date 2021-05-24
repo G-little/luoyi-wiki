@@ -33,23 +33,33 @@
     "m": null,
     "d": {
         "id": 1,
-        "title": "Leaf form diversification in an heirloom tomato results from alterations in two different HOMEOBOX genes",
-        "authors": [ //作者
-            "Hokuto Nakayama",
-            "Steven D. Rowland",
-            "Zizhang Cheng",
-            "Kristina Zumstein",
-            "Julie Kang",
-            "Yohei Kondo",
-            "Neelima R. Sinha"
-        ],
+        "title": "可以“吃”的传感器",
+        "brief": "可植入人体的医疗电子器件不仅可以提供重要的生理信号检测，同时还可以为包括心脏功能失常等在内的严重疾病提供及时的治疗。然而，传统医疗器件在应用中存在一些弊端，比如采用硅基硬质材料不能变形，无法很好地贴合皮肤、器官等；再比如存在时间和地域局限性，且操作繁杂，无法对人体进行实时、不间断地监测等。\n美国宾州州立大学助理教授程寰宇团队开发出的新型用于生物医学的可变形多模态传感器，不仅可以穿戴在人体复杂的皮肤或内脏器官表面，而且还可以在完成功能后完全溶解在人体内，一举解决了传统电子器件植入后需二次取出，以及与人体器官曲面不兼容等多个问题，这种新型传感器在医疗领域具有广阔的应用前景",
+        "guideText": "可以“吃”的传感器，降解后还能补充微量元素！详解柔性可降解电子器件的前沿研究、发展现状以及应用市场】可植入人体的医疗电子器件不仅可以提供重要的生理信号检测，同时还可以为包括心脏功能失常等在内的严重疾病提供及时的治疗。然而，传统医疗器件在应用中存在一些弊端，比如采用硅基硬质材料不能变形，无法很好地贴合皮肤、器官等；再比如存在时间和地域局限性，且操作繁杂，无法对人体进行实时、不间断地监测等。\n美国宾州州立大学助理教授程寰宇团队开发出的新型用于生物医学的可变形多模态传感器，不仅可以穿戴在人体复杂的皮肤或内脏器官表面，而且还可以在完成功能后完全溶解在人体内，一举解决了传统电子器件植入后需二次取出，以及与人体器官曲面不兼容等多个问题，这种新型传感器在医疗领域具有广阔的应用前景",
+        "guideImg": null,
+        "guideTitle": "xxxx", //导读标题
+        "author": {
+            "uid": 10176,
+            "avatar": "image/202104/f3366275df66d9eb225801952c543d21.jpg",
+            "name": "高潭清",
+            "workplace": "络绎学术",
+            "jobTitle": null,
+            "followStatus": 0
+        },
         "visitorBrief": null,
         "visitorCount": 0,
         "curiousCount": 0,
-        "brief": "Domesticated plants and animals display tremendous diversity in various phenotypic traits and often this diversity is seen within the same species. Tomato (Solanum lycopersicum; Solanaceae) cultivars show wide variation in leaf morphology, but the influence of breeding efforts in sculpting this diversity is not known. Here, we demonstrate that a single nucleotide deletion in the homeobox motif of BIPINNATA, which is a BEL-LIKE HOMEODOMAIN gene, led to a highly complex leaf phenotype in an heirloom tomato, Silvery Fir Tree (SiFT). Additionally, a comparative gene network analysis revealed that reduced expression of the ortholog of WUSCHEL RELATED HOMEOBOX 1 is also important for the narrow leaflet phenotype seen in SiFT. Phylogenetic and comparative genome analysis using whole-genome sequencing data suggests that the bip mutation in SiFT is likely a de novo mutation, instead of standing genetic variation. These results provide new insights into natural variation in phenotypic traits introduced into crops during improvement processes after domestication."
+        "curious": false,
+        "postDate": 1621849362,
+        "url": "/test",
+        "hasPdf": false,
+        "editor": "张三",
+        "tags": null,
+        "authors": null,
+        "source": "Nature",
+        "doi": "123456"
     }
 }
-
 ```
 
 
@@ -89,38 +99,38 @@
     "m": null,
     "d": {
         "pageSize": 10,
-        "total": null,
+        "total": 2147483647,
         "currentPage": 1,
         "list": [
             {
                 "id": 1,
-                "title": "Leaf form diversification in an heirloom tomato results from alterations in two different HOMEOBOX genes",
-                "authors": [
-                    "Hokuto Nakayama",
-                    "Steven D. Rowland",
-                    "Zizhang Cheng",
-                    "Kristina Zumstein",
-                    "Julie Kang",
-                    "Yohei Kondo",
-                    "Neelima R. Sinha"
-                ],
-                "visitorBrief": [
-                    {
-                        "nickname": null,
-                        "avatar": null,
-                        "uid": 10002,
-                        "jobTitle": null
-                    }
-                ],
-                "visitorCount": 1,
+                "title": "可以“吃”的传感器", //标题
+                "brief": "可植入人体的医疗电子器件不仅可以提供重要的生理信号检测，同时还可以为包括心脏功能失常等在内的严重疾病提供及时的治疗。然而，传统医疗器件在应用中存在一些弊端，比如采用硅基硬质材料不能变形，无法很好地贴合皮肤、器官等；再比如存在时间和地域局限性，且操作繁杂，无法对人体进行实时、不间断地监测等。\n美国宾州州立大学助理教授程寰宇团队开发出的新型用于生物医学的可变形多模态传感器，不仅可以穿戴在人体复杂的皮肤或内脏器官表面，而且还可以在完成功能后完全溶解在人体内，一举解决了传统电子器件植入后需二次取出，以及与人体器官曲面不兼容等多个问题，这种新型传感器在医疗领域具有广阔的应用前景", //简介
+                "guideText": "可以“吃”的传感器，降解后还能补充微量元素！详解柔性可降解电子器件的前沿研究、发展现状以及应用市场】可植入人体的医疗电子器件不仅可以提供重要的生理信号检测，同时还可以为包括心脏功能失常等在内的严重疾病提供及时的治疗。然而，传统医疗器件在应用中存在一些弊端，比如采用硅基硬质材料不能变形，无法很好地贴合皮肤、器官等；再比如存在时间和地域局限性，且操作繁杂，无法对人体进行实时、不间断地监测等。\n美国宾州州立大学助理教授程寰宇团队开发出的新型用于生物医学的可变形多模态传感器，不仅可以穿戴在人体复杂的皮肤或内脏器官表面，而且还可以在完成功能后完全溶解在人体内，一举解决了传统电子器件植入后需二次取出，以及与人体器官曲面不兼容等多个问题，这种新型传感器在医疗领域具有广阔的应用前景", //导读
+                "guideImg": null, //导读图片
+                "guideTitle": "xxxx", //导读标题
+                "author": { //作者
+                    "uid": 10176,
+                    "avatar": "image/202104/f3366275df66d9eb225801952c543d21.jpg",
+                    "name": "高潭清",
+                    "workplace": "络绎学术",
+                    "jobTitle": null,
+                    "followStatus": 0
+                },
+                "visitorBrief": null,
+                "visitorCount": 0,
                 "curiousCount": 0,
-                "curious": true
+                "curious": false,
+                "postDate": 1621849362000, //阿彪时间
+                "url": "/test",
+                "hasPdf": false, 
+                "editor": "张三" //编辑
             }
         ],
-        "end": false,
+        "end": true,
         "empty": false,
         "startIndex": 0,
-        "totalPage": null
+        "totalPage": -214748364
     }
 }
 
