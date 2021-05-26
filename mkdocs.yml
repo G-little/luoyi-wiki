@@ -27,4 +27,5 @@ nav:
     - 会议管理: './admin/admin_meeting.md'  
     - 用户配置管理: './admin/admin_profile.md'  
     - 专辑管理: './admin/admin_album.md'  
+    - 推荐管理: './admin/admin_banner.md'  
   
