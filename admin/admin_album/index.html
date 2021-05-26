@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Main - 络绎直播</title>
+        <title>专辑管理 - 络绎直播</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -112,7 +112,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Main</a>
+    <a href="../admin/" class="dropdown-item">Main</a>
 </li>
                                     
 <li>
@@ -140,7 +140,7 @@
 </li>
                                     
 <li>
-    <a href="../admin_album/" class="dropdown-item">专辑管理</a>
+    <a href="./" class="dropdown-item active">专辑管理</a>
 </li>
                                 </ul>
                             </li>
@@ -153,12 +153,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../luoyi/im/" class="nav-link">
+                                <a rel="prev" href="../admin_profile/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../admin_sys/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -180,7 +180,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">后台管理相关接口</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">专辑管理</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
               <ul class="nav flex-column">
@@ -194,15 +194,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">接口列表</a>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">关键流程说明</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口列表</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_7" class="nav-link">通用接口</a>
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口说明</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -213,19 +209,46 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">后台管理相关接口</h1>
+<h1 id="_1">专辑管理</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">后台管理相关接口</a><ul>
+<li><a href="#_1">专辑管理</a><ul>
 <li><a href="#_2">修订记录</a></li>
 <li><a href="#_3">背景</a></li>
 <li><a href="#_4">产品说明</a></li>
-<li><a href="#_5">接口列表</a></li>
-<li><a href="#_6">接口列表</a></li>
-<li><a href="#_7">通用接口</a><ul>
-<li><a href="#aliyun-token">aliyun 上传token接口</a><ul>
+<li><a href="#_5">关键流程说明</a></li>
+<li><a href="#_6">接口说明</a><ul>
+<li><a href="#_7">列表接口</a><ul>
 <li><a href="#_8">请求说明</a></li>
 <li><a href="#_9">输入参数</a></li>
+<li><a href="#_10">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_11">添加专辑</a><ul>
+<li><a href="#_12">请求说明</a></li>
+<li><a href="#_13">输入参数</a></li>
+<li><a href="#_14">请求实例</a></li>
+<li><a href="#_15">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_16">详情接口</a><ul>
+<li><a href="#_17">请求说明</a></li>
+<li><a href="#_18">输入参数</a></li>
+<li><a href="#_19">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_20">更新接口</a><ul>
+<li><a href="#_21">请求说明</a></li>
+<li><a href="#_22">输入参数</a></li>
+<li><a href="#_23">请求实例</a></li>
+<li><a href="#_24">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_25">删除接口</a><ul>
+<li><a href="#_26">请求说明</a></li>
+<li><a href="#_27">输入参数</a></li>
+<li><a href="#_28">请求实例</a></li>
+<li><a href="#_29">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -236,41 +259,18 @@
 </div>
 <h2 id="_2">修订记录</h2>
 <hr />
-<table>
-<thead>
-<tr>
-<th>日期</th>
-<th>作者</th>
-<th>修订类型</th>
-<th>修订内容</th>
-<th>版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2020年07月03日</td>
-<td>冷立纲</td>
-<td>A</td>
-<td>新增设计方案</td>
-<td>1.0</td>
-</tr>
-</tbody>
-</table>
+<p>日期 | 作者 | 修订类型 | 修订内容 | 版本
+---- | ---- | ---- | ---- | ---- |
+2020年04月10日|冷立纲|A|新增设计方案|1.0</p>
 <blockquote>
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
 <h2 id="_3">背景</h2>
-<p>后台管理相关接口</p>
+<p>专辑管理相关接口</p>
 <h2 id="_4">产品说明</h2>
-<h2 id="_5">接口列表</h2>
-<h2 id="_6">接口列表</h2>
-<ol>
-<li><a href="../admin_sys/">系统管理</a></li>
-<li><a href="../admin_tag/">标签管理</a></li>
-<li><a href="../admin_user/">用户管理</a></li>
-</ol>
-<h2 id="_7">通用接口</h2>
-<h3 id="aliyun-token">aliyun 上传token接口</h3>
+<h2 id="_5">关键流程说明</h2>
+<h2 id="_6">接口说明</h2>
+<h4 id="_7">列表接口</h4>
 <h5 id="_8">请求说明</h5>
 <table>
 <thead>
@@ -282,19 +282,374 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/upload/token</td>
+<td align="center">/admin/album/list</td>
 </tr>
 </tbody>
 </table>
 <h5 id="_9">输入参数</h5>
-<p>无</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">orderBy</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">排序</td>
+<td align="left">add_time:添加时间/sort_field:排序字段</td>
+</tr>
+<tr>
+<td align="left">keyword</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">搜索字</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_10">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 1, //ID
+                &quot;title&quot;: &quot;test&quot;,//标题
+                &quot;brief&quot;: &quot;test&quot;, //简介
+                &quot;imageUrl&quot;: &quot;/test&quot;, //封面
+                &quot;sortField&quot;: null, //排序字段
+                &quot;userCount&quot;: 1, //用户数
+                &quot;addTime&quot;: null, //添加时间
+                &quot;deleted&quot;: false //删除状态
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}
+
+</code></pre>
+
+<h4 id="_11">添加专辑</h4>
+<h5 id="_12">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/album/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_13">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">title</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">标题</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">brief</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">简介</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">imageUrl</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">封面</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">itemList</td>
+<td align="center">否</td>
+<td align="left">int[]</td>
+<td align="left">数组</td>
+<td align="left">科学家UID数组</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_14">请求实例</h5>
 <pre><code class="json">
 {
-    &quot;StatusCode&quot;: 200,
-    &quot;AccessKeyId&quot;: &quot;STS.NUzeDXzATcRoeUddFaeuNZQkR&quot;,
-    &quot;AccessKeySecret&quot;: &quot;DkGbx9v3SrNUjH2G3CDtb1TjCT69J8m7tMThx8YiQrRw&quot;,
-    &quot;Expiration&quot;: &quot;2021-03-28T01:59:04Z&quot;,
-    &quot;SecurityToken&quot;: &quot;CAIS+QF1q6Ft5B2yfSjIr5bPLv7sl5511JCEZ3PVgEY0afpitZTAsDz2IH1EenhsBeoatvU+nmlV6/galqVoRoReREvCKM1565kPCdBwv2WG6aKP9rUhpMCPPwr6UmzavqL7Z+H+U6mqGJOEYEzFkSle2KbzcS7YMXWuLZyOj+wIDLkQRRLqL0AxZrFsKxBltdUROFbIKP+pKWSKuGfLC1dysQcO4gEWq4bHm5LGs0qC0AGjm7JF99ihc6LJNZc8YM1NNP6ux/Fze6b71ypd1gNH7q8ejtYfpGeZ743BWQUJskTcareJrIV1Thd+fq9/EqJBrf7sdHbjdSZ7eO8agAFdejwONHhX+zIInBvx/ZTGFJP5UOvY3PmgG+oU+RE9TIUZ1xkZ91EsdJ9e9vr5ESR56KtJoeQjsxTQ88gJzRkpFWNrE8/I4N4IxEye+CiEJ11va884khDYhp5eiDCPn/5uw0NLunTFuxtshCEri+oG9M7n8cRVUIguR2ozKHrVUQ==&quot;
+    &quot;title&quot;: &quot;最有前途科学家TOP 1&quot;,
+    &quot;brief&quot;: &quot;最有前途科学家TOP 1&quot;,
+    &quot;imageUrl&quot;: &quot;/test&quot;,
+    &quot;sortField&quot;: null,
+    &quot;userCount&quot;: 1,
+    &quot;itemList&quot;:[10314]
+}
+
+</code></pre>
+
+<h5 id="_15">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="_16">详情接口</h4>
+<h5 id="_17">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/album/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_18">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_19">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;最有前途科学家TOP 1&quot;,
+        &quot;brief&quot;: &quot;最有前途科学家TOP 1&quot;,
+        &quot;imageUrl&quot;: &quot;/test&quot;,
+        &quot;sortField&quot;: null,
+        &quot;userCount&quot;: 1,
+        &quot;addTime&quot;: null,
+        &quot;deleted&quot;: false,
+        &quot;itemList&quot;: [
+            {
+                &quot;id&quot;: 2,
+                &quot;albumId&quot;: 2, //专辑ID
+                &quot;uid&quot;: 10314, //用户ID
+                &quot;addTime&quot;: 1622020070352 //添加时间
+            }
+        ]
+    }
+}
+
+</code></pre>
+
+<h4 id="_20">更新接口</h4>
+<h5 id="_21">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/album/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_22">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">标题</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">brief</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">简介</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">imageUrl</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">封面</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">itemList</td>
+<td align="center">否</td>
+<td align="left">int[]</td>
+<td align="left">数组</td>
+<td align="left">科学家UID数组</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_23">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;id&quot;:198,
+    &quot;type&quot;:3,
+    &quot;value&quot;:&quot;测试&quot;,
+    &quot;brief&quot;:&quot;这是一条测试2&quot;
+}
+
+
+</code></pre>
+
+<h5 id="_24">返回实例</h5>
+<pre><code>
+{
+    &quot;id&quot;:3,
+    &quot;title&quot;: &quot;最有前途科学家TOP 1&quot;,
+    &quot;brief&quot;: &quot;最有前途科学家TOP 1&quot;,
+    &quot;imageUrl&quot;: &quot;/test&quot;,
+    &quot;sortField&quot;: null,
+    &quot;userCount&quot;: 1,
+    &quot;itemList&quot;:[10314]
+}
+
+
+</code></pre>
+
+<h4 id="_25">删除接口</h4>
+<h5 id="_26">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/album/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_27">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_28">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;id&quot;:198,
+}
+
+
+</code></pre>
+
+<h5 id="_29">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+    }
 }
 
 </code></pre></div>
