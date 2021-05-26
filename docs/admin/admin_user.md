@@ -41,7 +41,7 @@
 | workplace   | 否 | string  |  学校/单位 |   |
 | studySubject   | 否 | string  |  学科 |   |
 | subjectField   | 否 | string  |  细分领域 |   |
-| startTime   | 否 | string  |  注册时间 | 开始时间  yyyy-MM-dd HH:mm:ss  |
+| startTime   | 否 | string  |  注册时间 | 开始时间  yyyy-MM-dd HH:mm:ss |
 | endTime   | 否 | string  |  注册时间 | 结束时间   |
 | page   | 否 | int  |  分页 |  |
 | limit   | 否 | int  |  单页条数 |  |
@@ -128,6 +128,9 @@ __user参数__
 | subjectField   | 否 | string  |  细分领域 | |
 | jobTitle   | 否 | string  |  头衔 | |
 | tags   | 否 | json  |  标签 | |
+| brief   | 否 |string  |  用户简介 | |
+| userType   | 否 | int  |  用户类型 | 0 普通用户 1 机构 2 运营 3 专家 |
+| careerList   | 否 | json  | 经历数据 | |
 
 __tags参数__
 
@@ -138,22 +141,43 @@ __tags参数__
 | value   | 是 | string  |   标签值 |  |
 
 
+__careerList参数__
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id   | 否 | int  |  经历ID |   id 为空追加否则更新  |
+| startTime   | 是 | string  |  开始时间 |  |
+| endTime   | 是 | string  |  截止时间 |  |
+| type   | 是 | int  |  类型 | 1 工作  2 教育  |
+| workplace   | 是 | string  |  地点 | |
+| jobTitle   | 是 | string  |  职位 | |
+| domain   | 否 | string  |  专业 | |
+
+
+
 
 ##### 请求实例
 
 ```json
 
 {
+    "uid":"10413",
     "avatar": "image/202104/e1f0ab0223e6c354003962b303cd3ce8.jpg",
-    "name": "高潭清",
+    "name": "李四",
     "gender": -1,
+    "birthday": null,
     "status": 0,
     "mobile": "15201008999",
+    "createTime": 1617982758165,
+    "updateTime": 1617983142034,
+    "userRole": null,
+    "certStatus": null,
     "workplace": "美团",
     "studySubject": "医学",
     "subjectField": "毒理学",
     "jobTitle": null,
     "realName": null,
+    "brief":"做个自我介绍吧",
     "tags": [
         {
             "type": 1,
@@ -167,9 +191,16 @@ __tags参数__
         }
     ],
     "userType": 1,
-    "email": null
+    "email": null,
+    "careerList":[{
+        "startTime":"1989/03",
+        "endTime":"1999/03",
+        "type":1,
+        "workplace":"美团",
+        "jobTitle":"CEO",
+        "domain":"计算机"           
+    }]
 }
-
 
 ```
 
@@ -215,14 +246,14 @@ __tags参数__
     "c": 0,
     "m": null,
     "d": {
-        "uid": 10063,
+        "uid": 10413,
         "avatar": "image/202104/e1f0ab0223e6c354003962b303cd3ce8.jpg",
-        "name": "高潭清",
+        "name": "李四",
         "gender": -1,
         "birthday": null,
         "status": 0,
         "mobile": "15201008999",
-        "createTime": 1618058530475,
+        "createTime": 1622014280930,
         "updateTime": null,
         "userRole": null,
         "certStatus": null,
@@ -244,9 +275,28 @@ __tags参数__
             }
         ],
         "userType": 1,
-        "email": null
+        "subjectId": null,
+        "fieldId": null,
+        "email": null,
+        "worktype": null,
+        "certId": null,
+        "brief": "做个自我介绍吧",
+        "careerList": [
+            {
+                "id": 21,
+                "uid": 10413,
+                "startTime": "1989/03",
+                "endTime": "1999/03",
+                "type": 1,
+                "workplace": "美团",
+                "jobTitle": "CEO",
+                "addTime": 1622015059602,
+                "domain": "计算机"
+            }
+        ]
     }
 }
+
 ```
 
 
@@ -276,6 +326,9 @@ __user参数__
 | subjectField   | 否 | string  |  细分领域 | |
 | jobTitle   | 否 | string  |  头衔 | |
 | tags   | 否 | json  |  标签 | |
+| brief   | 否 |string  |  用户简介 | |
+| userType   | 否 | int  |  用户类型 | 0 普通用户 1 机构 2 运营 3 专家 |
+| careerList   | 否 | json  | 经历数据 | |
 
 __tags参数__
 
@@ -284,6 +337,20 @@ __tags参数__
 | type   | 是 | int  |  标签类型 |  1 学科 2 细分领域 3 其他    |
 | tagId   | 是 | int  |   标签ID |  |
 | value   | 是 | string  |   标签值 |  |
+
+
+__careerList参数__
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id   | 否 | int  |  经历ID |   id 为空追加否则更新  |
+| startTime   | 是 | string  |  开始时间 |  |
+| endTime   | 是 | string  |  截止时间 |  |
+| type   | 是 | int  |  类型 | 1 工作  2 教育  |
+| workplace   | 是 | string  |  地点 | |
+| jobTitle   | 是 | string  |  职位 | |
+| domain   | 否 | string  |  专业 | |
+
 
 
 ##### 请求实例
