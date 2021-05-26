@@ -138,6 +138,10 @@
 <li>
     <a href="../admin_profile/" class="dropdown-item">用户配置管理</a>
 </li>
+                                    
+<li>
+    <a href="../admin_album/" class="dropdown-item">专辑管理</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -525,6 +529,27 @@
 <td align="left">标签</td>
 <td align="left"></td>
 </tr>
+<tr>
+<td align="left">brief</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">用户简介</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">userType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户类型</td>
+<td align="left">0 普通用户 1 机构 2 运营 3 专家</td>
+</tr>
+<tr>
+<td align="left">careerList</td>
+<td align="center">否</td>
+<td align="left">json</td>
+<td align="left">经历数据</td>
+<td align="left"></td>
+</tr>
 </tbody>
 </table>
 <p><strong>tags参数</strong></p>
@@ -562,19 +587,89 @@
 </tr>
 </tbody>
 </table>
+<p><strong>careerList参数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">经历ID</td>
+<td align="left">id 为空追加否则更新</td>
+</tr>
+<tr>
+<td align="left">startTime</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">开始时间</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">endTime</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">截止时间</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">类型</td>
+<td align="left">1 工作  2 教育</td>
+</tr>
+<tr>
+<td align="left">workplace</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">地点</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">jobTitle</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">职位</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">domain</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">专业</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
 <h5 id="_14">请求实例</h5>
 <pre><code class="json">
 {
+    &quot;uid&quot;:&quot;10413&quot;,
     &quot;avatar&quot;: &quot;image/202104/e1f0ab0223e6c354003962b303cd3ce8.jpg&quot;,
-    &quot;name&quot;: &quot;高潭清&quot;,
+    &quot;name&quot;: &quot;李四&quot;,
     &quot;gender&quot;: -1,
+    &quot;birthday&quot;: null,
     &quot;status&quot;: 0,
     &quot;mobile&quot;: &quot;15201008999&quot;,
+    &quot;createTime&quot;: 1617982758165,
+    &quot;updateTime&quot;: 1617983142034,
+    &quot;userRole&quot;: null,
+    &quot;certStatus&quot;: null,
     &quot;workplace&quot;: &quot;美团&quot;,
     &quot;studySubject&quot;: &quot;医学&quot;,
     &quot;subjectField&quot;: &quot;毒理学&quot;,
     &quot;jobTitle&quot;: null,
     &quot;realName&quot;: null,
+    &quot;brief&quot;:&quot;做个自我介绍吧&quot;,
     &quot;tags&quot;: [
         {
             &quot;type&quot;: 1,
@@ -588,9 +683,16 @@
         }
     ],
     &quot;userType&quot;: 1,
-    &quot;email&quot;: null
+    &quot;email&quot;: null,
+    &quot;careerList&quot;:[{
+        &quot;startTime&quot;:&quot;1989/03&quot;,
+        &quot;endTime&quot;:&quot;1999/03&quot;,
+        &quot;type&quot;:1,
+        &quot;workplace&quot;:&quot;美团&quot;,
+        &quot;jobTitle&quot;:&quot;CEO&quot;,
+        &quot;domain&quot;:&quot;计算机&quot;           
+    }]
 }
-
 
 </code></pre>
 
@@ -649,14 +751,14 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;uid&quot;: 10063,
+        &quot;uid&quot;: 10413,
         &quot;avatar&quot;: &quot;image/202104/e1f0ab0223e6c354003962b303cd3ce8.jpg&quot;,
-        &quot;name&quot;: &quot;高潭清&quot;,
+        &quot;name&quot;: &quot;李四&quot;,
         &quot;gender&quot;: -1,
         &quot;birthday&quot;: null,
         &quot;status&quot;: 0,
         &quot;mobile&quot;: &quot;15201008999&quot;,
-        &quot;createTime&quot;: 1618058530475,
+        &quot;createTime&quot;: 1622014280930,
         &quot;updateTime&quot;: null,
         &quot;userRole&quot;: null,
         &quot;certStatus&quot;: null,
@@ -678,9 +780,28 @@
             }
         ],
         &quot;userType&quot;: 1,
-        &quot;email&quot;: null
+        &quot;subjectId&quot;: null,
+        &quot;fieldId&quot;: null,
+        &quot;email&quot;: null,
+        &quot;worktype&quot;: null,
+        &quot;certId&quot;: null,
+        &quot;brief&quot;: &quot;做个自我介绍吧&quot;,
+        &quot;careerList&quot;: [
+            {
+                &quot;id&quot;: 21,
+                &quot;uid&quot;: 10413,
+                &quot;startTime&quot;: &quot;1989/03&quot;,
+                &quot;endTime&quot;: &quot;1999/03&quot;,
+                &quot;type&quot;: 1,
+                &quot;workplace&quot;: &quot;美团&quot;,
+                &quot;jobTitle&quot;: &quot;CEO&quot;,
+                &quot;addTime&quot;: 1622015059602,
+                &quot;domain&quot;: &quot;计算机&quot;
+            }
+        ]
     }
 }
+
 </code></pre>
 
 <h4 id="_20">更新接口</h4>
@@ -789,6 +910,27 @@
 <td align="left">标签</td>
 <td align="left"></td>
 </tr>
+<tr>
+<td align="left">brief</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">用户简介</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">userType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户类型</td>
+<td align="left">0 普通用户 1 机构 2 运营 3 专家</td>
+</tr>
+<tr>
+<td align="left">careerList</td>
+<td align="center">否</td>
+<td align="left">json</td>
+<td align="left">经历数据</td>
+<td align="left"></td>
+</tr>
 </tbody>
 </table>
 <p><strong>tags参数</strong></p>
@@ -822,6 +964,69 @@
 <td align="center">是</td>
 <td align="left">string</td>
 <td align="left">标签值</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>careerList参数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">经历ID</td>
+<td align="left">id 为空追加否则更新</td>
+</tr>
+<tr>
+<td align="left">startTime</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">开始时间</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">endTime</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">截止时间</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">类型</td>
+<td align="left">1 工作  2 教育</td>
+</tr>
+<tr>
+<td align="left">workplace</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">地点</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">jobTitle</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">职位</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">domain</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">专业</td>
 <td align="left"></td>
 </tr>
 </tbody>
