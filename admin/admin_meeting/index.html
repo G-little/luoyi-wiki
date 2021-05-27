@@ -291,6 +291,12 @@
 <li><a href="#_51">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#_52">生成推流地址</a><ul>
+<li><a href="#_53">请求说明</a></li>
+<li><a href="#_54">输入参数</a></li>
+<li><a href="#_55">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1441,6 +1447,87 @@
       
     }
 }
+
+</code></pre>
+
+<h4 id="_52">生成推流地址</h4>
+<h5 id="_53">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/meeting/generate_obs</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">meetingId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left">会议ID</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_55">返回实例</h5>
+<pre><code>
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;:  {
+                &quot;id&quot;: 331,
+                &quot;streamId&quot;: null,
+                &quot;type&quot;: 0,
+                &quot;content&quot;: &quot;迷不知返&quot;,
+                &quot;uid&quot;: 10024,
+                &quot;verifyCode&quot;: null,
+                &quot;mayStartTime&quot;: null,
+                &quot;orgId&quot;: null,
+                &quot;userLimit&quot;: 30,
+                &quot;startTime&quot;: 1618212405928,
+                &quot;endTime&quot;: 1618212670498,
+                &quot;deleted&quot;: false,
+                &quot;addTime&quot;: 1618212404267,
+                &quot;subscribeCount&quot;: 0,
+                &quot;notifyStatus&quot;: 0,
+                &quot;playUrl&quot;: null,
+                &quot;timeLen&quot;: null,
+                &quot;tags&quot;: null,
+                &quot;userBrief&quot;: [
+                    {
+                        &quot;uid&quot;: 10024,
+                        &quot;role&quot;: 1
+                    }
+                ],
+                &quot;status&quot;: -1,
+                &quot;privacyLevel&quot;: &quot;public&quot;,
+                &quot;save&quot;: false,
+                &quot;coverUrl&quot;: null,
+                &quot;coverSize&quot;: null,
+                &quot;obsUrl&quot;:&quot;xxx&quot;, //推流地址
+                &quot;obsName&quot;:&quot;xxx&quot; //推流名
+            }
+
+    }
+
 
 </code></pre></div>
             </div>
