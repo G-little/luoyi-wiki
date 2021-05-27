@@ -283,7 +283,9 @@
                 }
             ],
             "status": 0,  //查询的status 类型 0 预约  1 直播中  -1 结束
-            "privacyLevel": "public"
+            "privacyLevel": "public",
+            "obsUrl":"xxx", //推流地址
+            "obsName":"xxx" //推流名称
         }
 }
 

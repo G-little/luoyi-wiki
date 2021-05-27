@@ -673,3 +673,68 @@ __relatedList参数__
 
 ```
 
+
+####  生成推流地址
+
+##### 请求说明
+
+| http 请求方式          | post |
+|:------------- |:---------------:|
+| url      |/admin/meeting/generate_obs |
+
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| meetingId   | 是 | int  |  ID | 会议ID  |
+
+
+
+#####  返回实例
+
+```
+
+{
+    "c": 0,
+    "m": null,
+    "d":  {
+                "id": 331,
+                "streamId": null,
+                "type": 0,
+                "content": "迷不知返",
+                "uid": 10024,
+                "verifyCode": null,
+                "mayStartTime": null,
+                "orgId": null,
+                "userLimit": 30,
+                "startTime": 1618212405928,
+                "endTime": 1618212670498,
+                "deleted": false,
+                "addTime": 1618212404267,
+                "subscribeCount": 0,
+                "notifyStatus": 0,
+                "playUrl": null,
+                "timeLen": null,
+                "tags": null,
+                "userBrief": [
+                    {
+                        "uid": 10024,
+                        "role": 1
+                    }
+                ],
+                "status": -1,
+                "privacyLevel": "public",
+                "save": false,
+                "coverUrl": null,
+                "coverSize": null,
+                "obsUrl":"xxx", //推流地址
+                "obsName":"xxx" //推流名
+            }
+            
+    }
+
+
+```
+
+
