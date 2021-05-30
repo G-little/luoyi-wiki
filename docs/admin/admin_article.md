@@ -232,6 +232,88 @@ __tags参数__
 ```
 
 
+####  添加接口
+
+##### 请求说明
+
+| http 请求方式          | post json |
+|:------------- |:---------------:|
+| url      |/admin/article/create |
+
+
+#####  输入参数
+
+__article参数__
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| title   | 是 | string  |   论文标题 |  |
+| brief   | 是 | string  |   论文概述 |  |
+| uid   | 是 | int  |   用户ID|  |
+| subject   | 否 | int  |   学科ID |  |
+| field   | 否 | int  |   细分领域ID |  |
+| keywords   | 否 | string  |   搜索关键字 |  |
+| postDate   | 否 | string  |   发表日期 | yyyy-MM-dd  |
+| url   | 是 | string  |   论文地址 |  |
+| add_time   | 是 | string  |   添加时间 | yyyy-mm-dd HH:mm:ss  |
+| source   | 是 | string  |   期刊|  |
+| doi   | 是 | string  |   ；论文标志|  |
+| authors   | 是 | string  |   论文作者| 字符串 手写  |
+| guideText   | 否 | string  |   text| 导读  |
+| guideTitle   | 否 | string  |   text| 导读标题  |
+| guideImg   | 否 | string  |   导读图片|  |
+| tags   | 否 | json  |   标签 |  |
+
+__tags参数__
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| type   | 是 | int  |  标签类型 |  1 学科 2 细分领域 3 其他    |
+| tagId   | 是 | int  |   标签ID |  |
+| value   | 是 | string  |   标签值 |  |
+
+
+
+
+
+##### 请求实例
+
+```json
+
+{
+    "id":1,
+    "subjects":3,
+    "tags":[
+        {
+            "type":"2",
+            "tagId":1,
+            "value":"测试"
+        }
+    ]
+}
+
+
+```
+
+
+#####  返回实例
+
+```
+
+{
+    "id":1,
+    "subjects":3,
+    "tags":[
+        {
+            "type":"2",
+            "tagId":1,
+            "value":"测试"
+        }
+    ]
+}
+```
+
+
 
 ####  删除接口
 
