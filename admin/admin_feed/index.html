@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>专辑管理 - 络绎直播</title>
+        <title>推荐管理 - 络绎直播</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -140,7 +140,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">专辑管理</a>
+    <a href="../admin_album/" class="dropdown-item">专辑管理</a>
 </li>
                                     
 <li>
@@ -148,7 +148,7 @@
 </li>
                                     
 <li>
-    <a href="../admin_feed/" class="dropdown-item">推荐管理</a>
+    <a href="./" class="dropdown-item active">推荐管理</a>
 </li>
                                     
 <li>
@@ -165,12 +165,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../admin_profile/" class="nav-link">
+                                <a rel="prev" href="../admin_banner/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../admin_banner/" class="nav-link">
+                                <a rel="next" href="../admin_cert/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -192,25 +192,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">专辑管理</a>
+            <li class="nav-item" data-level="1"><a href="#feed" class="nav-link">Feed管理</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">背景</a>
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">修订记录</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">产品说明</a>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">背景</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">关键流程说明</a>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">产品说明</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口说明</a>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">关键流程说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">接口说明</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -221,46 +221,25 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">专辑管理</h1>
+<h1 id="feed">Feed管理</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">专辑管理</a><ul>
-<li><a href="#_2">修订记录</a></li>
-<li><a href="#_3">背景</a></li>
-<li><a href="#_4">产品说明</a></li>
-<li><a href="#_5">关键流程说明</a></li>
-<li><a href="#_6">接口说明</a><ul>
-<li><a href="#_7">列表接口</a><ul>
-<li><a href="#_8">请求说明</a></li>
-<li><a href="#_9">输入参数</a></li>
-<li><a href="#_10">返回实例</a></li>
+<li><a href="#feed">Feed管理</a><ul>
+<li><a href="#_1">修订记录</a></li>
+<li><a href="#_2">背景</a></li>
+<li><a href="#_3">产品说明</a></li>
+<li><a href="#_4">关键流程说明</a></li>
+<li><a href="#_5">接口说明</a><ul>
+<li><a href="#_6">列表接口</a><ul>
+<li><a href="#_7">请求说明</a></li>
+<li><a href="#_8">输入参数</a></li>
+<li><a href="#_9">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_11">添加专辑</a><ul>
-<li><a href="#_12">请求说明</a></li>
-<li><a href="#_13">输入参数</a></li>
-<li><a href="#_14">请求实例</a></li>
-<li><a href="#_15">返回实例</a></li>
-</ul>
-</li>
-<li><a href="#_16">详情接口</a><ul>
-<li><a href="#_17">请求说明</a></li>
-<li><a href="#_18">输入参数</a></li>
-<li><a href="#_19">返回实例</a></li>
-</ul>
-</li>
-<li><a href="#_20">更新接口</a><ul>
-<li><a href="#_21">请求说明</a></li>
-<li><a href="#_22">输入参数</a></li>
-<li><a href="#_23">请求实例</a></li>
-<li><a href="#_24">返回实例</a></li>
-</ul>
-</li>
-<li><a href="#_25">删除接口</a><ul>
-<li><a href="#_26">请求说明</a></li>
-<li><a href="#_27">输入参数</a></li>
-<li><a href="#_28">请求实例</a></li>
-<li><a href="#_29">返回实例</a></li>
+<li><a href="#_10">置顶接口</a><ul>
+<li><a href="#_11">请求说明</a></li>
+<li><a href="#_12">输入参数</a></li>
+<li><a href="#_13">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -269,7 +248,7 @@
 </li>
 </ul>
 </div>
-<h2 id="_2">修订记录</h2>
+<h2 id="_1">修订记录</h2>
 <hr />
 <p>日期 | 作者 | 修订类型 | 修订内容 | 版本
 ---- | ---- | ---- | ---- | ---- |
@@ -277,13 +256,13 @@
 <blockquote>
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
-<h2 id="_3">背景</h2>
-<p>专辑管理相关接口</p>
-<h2 id="_4">产品说明</h2>
-<h2 id="_5">关键流程说明</h2>
-<h2 id="_6">接口说明</h2>
-<h4 id="_7">列表接口</h4>
-<h5 id="_8">请求说明</h5>
+<h2 id="_2">背景</h2>
+<p>FEED管理相关接口</p>
+<h2 id="_3">产品说明</h2>
+<h2 id="_4">关键流程说明</h2>
+<h2 id="_5">接口说明</h2>
+<h4 id="_6">列表接口</h4>
+<h5 id="_7">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -294,11 +273,11 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/album/list</td>
+<td align="center">/admin/recommend/list</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_9">输入参数</h5>
+<h5 id="_8">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -310,20 +289,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td align="left">orderBy</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">排序</td>
-<td align="left">add_time:添加时间/sort_field:排序字段</td>
-</tr>
-<tr>
-<td align="left">keyword</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">搜索字</td>
-<td align="left"></td>
-</tr>
 <tr>
 <td align="left">page</td>
 <td align="center">否</td>
@@ -338,279 +303,60 @@
 <td align="left">单页条数</td>
 <td align="left"></td>
 </tr>
+<tr>
+<td align="left">startTime</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">开始时间</td>
+<td align="left">yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td align="left">endTime</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">结束时间</td>
+<td align="left">yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td align="left">uid</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left"></td>
+</tr>
 </tbody>
 </table>
-<h5 id="_10">返回实例</h5>
+<h5 id="_9">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;total&quot;: 1,
+        &quot;pageSize&quot;: 1,
+        &quot;total&quot;: 2147483647,
         &quot;currentPage&quot;: 1,
         &quot;list&quot;: [
             {
-                &quot;id&quot;: 1, //ID
-                &quot;title&quot;: &quot;test&quot;,//标题
-                &quot;brief&quot;: &quot;test&quot;, //简介
-                &quot;imageUrl&quot;: &quot;/test&quot;, //封面
-                &quot;sortField&quot;: null, //排序字段
-                &quot;userCount&quot;: 1, //用户数
-                &quot;addTime&quot;: null, //添加时间
-                &quot;deleted&quot;: false //删除状态
+                &quot;id&quot;: 409,  //
+                &quot;name&quot;: &quot;冷小纲&quot;, //姓名
+                &quot;workplace&quot;: &quot;都柏林大学&quot;, //工作地点
+                &quot;jobTitle&quot;: null, //职务 
+                &quot;type&quot;: 2, //类型 2 主讲会议，3 参加会议 4 发布论文
+                &quot;title&quot;: &quot;视频直播001&quot;, //标题
+                &quot;addTime&quot;: 1622451965807 //添加时间
             }
         ],
-        &quot;end&quot;: true,
+        &quot;end&quot;: false,
         &quot;empty&quot;: false,
         &quot;startIndex&quot;: 0,
-        &quot;totalPage&quot;: 1
+        &quot;totalPage&quot;: 2147483647
     }
 }
 
 </code></pre>
 
-<h4 id="_11">添加专辑</h4>
-<h5 id="_12">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post json</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/album/create</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_13">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">title</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">标题</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">brief</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">简介</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">imageUrl</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">封面</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">itemList</td>
-<td align="center">否</td>
-<td align="left">int[]</td>
-<td align="left">数组</td>
-<td align="left">科学家UID数组</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_14">请求实例</h5>
-<pre><code class="json">
-{
-    &quot;title&quot;: &quot;最有前途科学家TOP 1&quot;,
-    &quot;brief&quot;: &quot;最有前途科学家TOP 1&quot;,
-    &quot;imageUrl&quot;: &quot;/test&quot;,
-    &quot;sortField&quot;: null,
-    &quot;userCount&quot;: 1,
-    &quot;itemList&quot;:[10314]
-}
-
-</code></pre>
-
-<h5 id="_15">返回实例</h5>
-<pre><code>
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-
-    }
-}
-
-</code></pre>
-
-<h4 id="_16">详情接口</h4>
-<h5 id="_17">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/album/read</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_18">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_19">返回实例</h5>
-<pre><code>
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;id&quot;: 2,
-        &quot;title&quot;: &quot;最有前途科学家TOP 1&quot;,
-        &quot;brief&quot;: &quot;最有前途科学家TOP 1&quot;,
-        &quot;imageUrl&quot;: &quot;/test&quot;,
-        &quot;sortField&quot;: null,
-        &quot;userCount&quot;: 1,
-        &quot;addTime&quot;: null,
-        &quot;deleted&quot;: false,
-        &quot;itemList&quot;: [
-            {
-                &quot;id&quot;: 2,
-                &quot;albumId&quot;: 2, //专辑ID
-                &quot;uid&quot;: 10314, //用户ID
-                &quot;addTime&quot;: 1622020070352 //添加时间
-            }
-        ]
-    }
-}
-
-</code></pre>
-
-<h4 id="_20">更新接口</h4>
-<h5 id="_21">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post json</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/album/update</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_22">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">title</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">标题</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">brief</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">简介</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">imageUrl</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">封面</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">itemList</td>
-<td align="center">否</td>
-<td align="left">int[]</td>
-<td align="left">数组</td>
-<td align="left">科学家UID数组</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_23">请求实例</h5>
-<pre><code class="json">
-{
-    &quot;id&quot;:198,
-    &quot;type&quot;:3,
-    &quot;value&quot;:&quot;测试&quot;,
-    &quot;brief&quot;:&quot;这是一条测试2&quot;
-}
-
-
-</code></pre>
-
-<h5 id="_24">返回实例</h5>
-<pre><code>
-{
-    &quot;id&quot;:3,
-    &quot;title&quot;: &quot;最有前途科学家TOP 1&quot;,
-    &quot;brief&quot;: &quot;最有前途科学家TOP 1&quot;,
-    &quot;imageUrl&quot;: &quot;/test&quot;,
-    &quot;sortField&quot;: null,
-    &quot;userCount&quot;: 1,
-    &quot;itemList&quot;:[10314]
-}
-
-
-</code></pre>
-
-<h4 id="_25">删除接口</h4>
-<h5 id="_26">请求说明</h5>
+<h4 id="_10">置顶接口</h4>
+<h5 id="_11">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -621,11 +367,11 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/album/delete</td>
+<td align="center">/admin/recommend/top</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_27">输入参数</h5>
+<h5 id="_12">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -646,23 +392,15 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_28">请求实例</h5>
-<pre><code class="json">
-{
-    &quot;id&quot;:198,
-}
-
-
-</code></pre>
-
-<h5 id="_29">返回实例</h5>
+<h5 id="_13">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
+
     }
-}
+  }
 
 </code></pre></div>
             </div>
