@@ -1,6 +1,9 @@
 # 欢迎来络绎直播文档
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 架构图
+
+![41624069868_.pic_hd](media/41624069868_.pic_hd.jpg)
+
 
 ## 测试环境说明
 
