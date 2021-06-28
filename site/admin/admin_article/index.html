@@ -144,7 +144,11 @@
 </li>
                                     
 <li>
-    <a href="../admin_banner/" class="dropdown-item">推荐管理</a>
+    <a href="../admin_banner/" class="dropdown-item">广告位管理</a>
+</li>
+                                    
+<li>
+    <a href="../admin_feed/" class="dropdown-item">推荐管理</a>
 </li>
                                     
 <li>
@@ -245,23 +249,30 @@
 <li><a href="#_19">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_20">删除接口</a><ul>
+<li><a href="#_20">添加接口</a><ul>
 <li><a href="#_21">请求说明</a></li>
 <li><a href="#_22">输入参数</a></li>
 <li><a href="#_23">请求实例</a></li>
 <li><a href="#_24">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_25">下载用户列表</a><ul>
+<li><a href="#_25">删除接口</a><ul>
 <li><a href="#_26">请求说明</a></li>
 <li><a href="#_27">输入参数</a></li>
-<li><a href="#_28">返回实例</a></li>
+<li><a href="#_28">请求实例</a></li>
+<li><a href="#_29">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#_29">浏览用户列表</a><ul>
-<li><a href="#_30">请求说明</a></li>
-<li><a href="#_31">输入参数</a></li>
-<li><a href="#_32">返回实例</a></li>
+<li><a href="#_30">下载用户列表</a><ul>
+<li><a href="#_31">请求说明</a></li>
+<li><a href="#_32">输入参数</a></li>
+<li><a href="#_33">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#_34">浏览用户列表</a><ul>
+<li><a href="#_35">请求说明</a></li>
+<li><a href="#_36">输入参数</a></li>
+<li><a href="#_37">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -599,8 +610,218 @@
 }
 </code></pre>
 
-<h4 id="_20">删除接口</h4>
+<h4 id="_20">添加接口</h4>
 <h5 id="_21">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/article/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_22">输入参数</h5>
+<p><strong>article参数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">title</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">论文标题</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">brief</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">论文概述</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">uid</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">subject</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">学科ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">field</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">细分领域ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">keywords</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">搜索关键字</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">postDate</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">发表日期</td>
+<td align="left">yyyy-MM-dd</td>
+</tr>
+<tr>
+<td align="left">url</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">论文地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">add_time</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">添加时间</td>
+<td align="left">yyyy-mm-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td align="left">source</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">期刊</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">doi</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">；论文标志</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">authors</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">论文作者</td>
+<td align="left">字符串 手写</td>
+</tr>
+<tr>
+<td align="left">guideText</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">text</td>
+<td align="left">导读</td>
+</tr>
+<tr>
+<td align="left">guideTitle</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">text</td>
+<td align="left">导读标题</td>
+</tr>
+<tr>
+<td align="left">guideImg</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">导读图片</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">tags</td>
+<td align="center">否</td>
+<td align="left">json</td>
+<td align="left">标签</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>tags参数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">type</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">标签类型</td>
+<td align="left">1 学科 2 细分领域 3 其他</td>
+</tr>
+<tr>
+<td align="left">tagId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">标签ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">标签值</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_23">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;id&quot;:1,
+    &quot;subjects&quot;:3,
+    &quot;tags&quot;:[
+        {
+            &quot;type&quot;:&quot;2&quot;,
+            &quot;tagId&quot;:1,
+            &quot;value&quot;:&quot;测试&quot;
+        }
+    ]
+}
+
+
+</code></pre>
+
+<h5 id="_24">返回实例</h5>
+<pre><code>
+{
+    &quot;id&quot;:1,
+    &quot;subjects&quot;:3,
+    &quot;tags&quot;:[
+        {
+            &quot;type&quot;:&quot;2&quot;,
+            &quot;tagId&quot;:1,
+            &quot;value&quot;:&quot;测试&quot;
+        }
+    ]
+}
+</code></pre>
+
+<h4 id="_25">删除接口</h4>
+<h5 id="_26">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -615,7 +836,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_22">输入参数</h5>
+<h5 id="_27">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -636,7 +857,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_23">请求实例</h5>
+<h5 id="_28">请求实例</h5>
 <pre><code class="json">
 {
     &quot;id&quot;:198,
@@ -645,7 +866,7 @@
 
 </code></pre>
 
-<h5 id="_24">返回实例</h5>
+<h5 id="_29">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
@@ -656,8 +877,8 @@
 
 </code></pre>
 
-<h4 id="_25">下载用户列表</h4>
-<h5 id="_26">请求说明</h5>
+<h4 id="_30">下载用户列表</h4>
+<h5 id="_31">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -672,7 +893,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_27">输入参数</h5>
+<h5 id="_32">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -707,7 +928,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_28">返回实例</h5>
+<h5 id="_33">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
@@ -733,8 +954,8 @@
 }
 </code></pre>
 
-<h4 id="_29">浏览用户列表</h4>
-<h5 id="_30">请求说明</h5>
+<h4 id="_34">浏览用户列表</h4>
+<h5 id="_35">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -749,7 +970,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_31">输入参数</h5>
+<h5 id="_36">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -784,7 +1005,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_32">返回实例</h5>
+<h5 id="_37">返回实例</h5>
 <pre><code>
 {
     &quot;c&quot;: 0,
