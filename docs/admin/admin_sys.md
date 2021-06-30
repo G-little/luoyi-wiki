@@ -40,7 +40,7 @@
 
 | http 请求方式          |post             |
 |:------------- |:---------------:|
-| url      |/admin/login_code |
+| url      |/admin/auth/login_code |
 
 
 #####  输入参数
