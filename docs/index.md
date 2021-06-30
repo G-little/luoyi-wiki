@@ -7,7 +7,8 @@
 
 ## 测试环境说明
 
-* 测试域名 	[http://smileback.xiaogang.org.cn](http://smileback.xiaogang.org.cn)
+* 测试域名 	[http://test-api.loyioa.com](http://test-api.loyioa.com)
+* 线上域名 	[http://dev-api.loyioa.com](http://dev-api.loyioa.com)
 * 获取上传token接口: {{host}}/upload/token
 
 
